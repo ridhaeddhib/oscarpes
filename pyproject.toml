@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name            = "oscarpes"
-version         = "3.0.0"
+version         = "3.1.1"
 description     = "OSCARpes — One-Step Computed Angle-Resolved PhotoEmission Spectroscopy database. Ab initio photoemission spectra from relativistic multiple-scattering theory (SPR-KKR one-step model)."
 readme          = "README.md"
 license         = {text = "MIT"}
