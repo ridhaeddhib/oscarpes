@@ -6,10 +6,10 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![PyPI version](https://img.shields.io/pypi/v/oscarpes.svg)](https://pypi.org/project/oscarpes/)
 
-A database of *ab initio* photoemission spectra obtained within the one-step
+A database of *theoretical* photoemission spectra obtained within the one-step
 model of photoemission, combining relativistic multiple-scattering theory
 (KKR) with Green's-function formalism and full experimental realism
-(photon field, surface barrier, detector geometry).
+(photon source, sample orientation, detector geometry, ...).
 
 OSCARpes ingests raw [SPR-KKR](https://www.ebert.cup.uni-muenchen.de/old/index.php/en/software/sprkkr)
 output files into a **Lance + Zarr** database and exposes them through
@@ -29,7 +29,7 @@ machine learning. All low-level file parsing is handled by
 | **Visualisation** | 17 publication-quality plotting functions (ARPES maps, CD-ARPES, spin polarization, EDC/MDC stacks, radial potentials, shape functions, Voronoi cells, semiinfinite structures, photon geometry diagrams, ...) |
 | **Post-processing** | 15 analysis routines -- EDC/MDC peak finding, band dispersion, CD asymmetry, valley polarization, spin texture, Fermi surface, k_z mapping, radial moments, ... |
 | **ML** | 128-dimensional feature vectors encoding photon parameters, crystal structure, SCF state, spectral shape, and spin texture; batch extraction to NumPy/pandas; PyTorch `IterableDataset` streaming directly from Lance |
-| **NOMAD/FAIRmat** | Archive export plugin conforming to NOMAD metainfo schema; first KKR photoemission parser in the FAIRmat ecosystem |
+| **NOMAD/FAIRmat** | UNDERDEVELOPMENT!!! Archive export plugin conforming to NOMAD metainfo schema; first KKR photoemission parser in the FAIRmat ecosystem |
 | **Cloud** | Transparent S3/GCS storage via fsspec -- same API for local and remote databases |
 
 ---
