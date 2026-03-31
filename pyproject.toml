@@ -1,0 +1,96 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name            = "oscarpes"
+version         = "3.0.0"
+description     = "OSCARpes — One-Step Computed Angle-Resolved PhotoEmission Spectroscopy database. Ab initio photoemission spectra from relativistic multiple-scattering theory (SPR-KKR one-step model)."
+readme          = "README.md"
+license         = {text = "MIT"}
+requires-python = ">=3.9"
+keywords        = ["ARPES", "photoemission", "DFT", "KKR", "SPR-KKR", "spectroscopy", "one-step-model", "Green-function"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "matplotlib>=3.7",
+    "zarr>=3.0",
+    "lance>=0.9",
+    "pyarrow>=14",
+    "duckdb>=0.10",
+    "fsspec>=2023.6",
+]
+
+[project.optional-dependencies]
+ase = [
+    "ase>=3.22",
+]
+sprkkr = [
+    "ase2sprkkr",          # required for parse_spc / parse_spec_out / parse_inp grammar
+]
+cloud = [
+    "s3fs>=2023.6",
+    "gcsfs>=2023.6",
+]
+ml = [
+    "scikit-learn>=1.3",
+    "pandas>=2.0",
+    "torch>=2.0",
+    "lance[pytorch]",
+]
+nomad = [
+    "nomad-lab>=1.3",
+    "nomad-simulations>=0.0.4",
+]
+all = [
+    "oscarpes[ase,sprkkr,cloud,ml,nomad]",
+]
+docs = [
+    "sphinx>=7",
+    "sphinx-rtd-theme",
+    "sphinx-copybutton",
+]
+dev = [
+    "pytest>=7",
+    "ipykernel",
+    "jupyterlab",
+    "oscarpes[docs]",
+]
+
+[project.scripts]
+oscarpes = "oscarpes.cli:main"
+
+[project.entry-points."nomad.plugin"]
+sprkkr_parser = "oscarpes.nomad_plugin:sprkkr_parser"
+sprkkr_schema = "oscarpes.nomad_plugin:sprkkr_schema"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["oscarpes*"]
+
+[tool.pytest.ini_options]
+testpaths    = ["tests"]
+addopts      = "-v --tb=short"
+# markers used in the test suite
+markers = [
+    "slow: marks tests that ingest large datasets (deselect with -m 'not slow')",
+]
+
+[project.urls]
+Homepage = "https://github.com/ridhaeddhib/oscarpes"
+Repository = "https://github.com/ridhaeddhib/oscarpes"
+Documentation = "https://oscarpes.readthedocs.io"
+Issues = "https://github.com/ridhaeddhib/oscarpes/issues"

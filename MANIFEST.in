@@ -1,0 +1,6 @@
+include LICENSE
+include README.md
+recursive-include src/oscarpes *.py
+recursive-include docs *.rst *.py Makefile
+prune docs/_build
+prune tests

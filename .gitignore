@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.claude/
+
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+!examples/oscarpes_demo.ipynb
+*.pytest_cache/
+
+# Database / data files
+oscar_db/
+*.lance/
+*.zarr/
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc output / scratch files
+*.png
+*.cif
+slurm-*.out
+test*
+
+# SPR-KKR large binary/output files in test data
+test/**/*.pot
+test/**/*.pot_new
+test/**/*.sfn
+test/**/*.spc
+test/**/*.bsf
+test/**/*.dos
+test/**/*.out
+test/**/*.agr
+test/**/*.rat
+test/**/*.log
+test/**/*.tau.dir/
+test/**/slurm-*.out
+test/**/in_pot.inp
+test/**/in_structur.inp
+
+# SPR-KKR files in examples/ to exclude
+examples/**/*.agr
+examples/**/*.dos
+examples/**/*.sh
+examples/**/buildbot.log

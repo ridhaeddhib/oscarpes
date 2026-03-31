@@ -1,0 +1,1154 @@
+ 
+
+          **************************************************************
+          *                                                            *
+          *        ****   *****   *****   *    *  *    *  *****        *
+          *       *    *  *    *  *    *  *   *   *   *   *    *       *
+          *       *       *    *  *    *  *  *    *  *    *    *       *
+          *        ****   *****   *****   * *     * *     *****        *
+          *            *  *       *  *    ** *    ** *    *  *         *
+          *       *    *  *       *   *   *   *   *   *   *   *        *
+          *        ****   *       *    *  *    *  *    *  *    *       *
+          *                                                            *
+          *------------------------------------------------------------*
+          *      KKRSPEC  VERSION  9.7            (C) 2025  H. Ebert   *
+          **************************************************************
+
+
+          programm execution  on    03/12/2025    at   09:39:35
+
+          Compiled on      : Linux viper.ntc.zcu.cz 6.1.141-1.el9.elrepo.x86_64 GNU/Linux
+          Compiled with    : ifx (IFX) 2025.1.1 20250418
+          Date of compile  : Tue Nov 25 13:50:42 CET 2025"//
+
+          MPI calculation with NPROCS = 100
+
+          input file       : /data/ridha/Gold/Au3D/new/ARPES_K/Au_ARPES.inp
+
+
+ *******************************************************************************
+                                 <GETLRECREAL>
+ *******************************************************************************
+
+          record length parameter for REAL's   LRECREAL8 =  2
+          a double precision real*8 is stored in 2 words a 32 bits    
+
+
+
+ *******************************************************************************
+                                    <POTRD2>
+ *******************************************************************************
+
+
+          system dimension: 3D        
+          system type:      BULK                          
+          SCF status:       CONVERGED 
+
+
+
+ *******************************************************************************
+                               <INIT_MOD_LATTICE>
+ *******************************************************************************
+
+          initialize the module <MOD_LATTICE> according to SYSDIM = 3D
+
+          set up basis vectors for reciprocal space 
+
+
+          real space Bravais lattice: cubic       face-centered  m3m    O_h 
+
+          primitive vectors for real space Bravais lattice
+
+            (   0.00000,   0.50000,   0.50000 )
+            (   0.50000,   0.00000,   0.50000 )
+            (   0.50000,   0.50000,   0.00000 )
+
+          basis vectors in units of a
+
+            (   0.00000,   0.00000,   0.00000 )
+
+          primitive vectors of reciprocal space Bravais lattice
+                 in units of 2*pi/a
+
+            (  -1.00000,   1.00000,   1.00000 )
+            (   1.00000,  -1.00000,   1.00000 )
+            (   1.00000,   1.00000,  -1.00000 )
+
+
+ *******************************************************************************
+                                   <SYMINIT>
+ *******************************************************************************
+
+          set up possible symmetry operations for the 
+          real space Bravais lattice: cubic       face-centered  m3m    O_h 
+
+          crystal system   7     CUB
+
+          symmetry operations to scan       NSYM  48
+          maximum possible symmetry operations    48
+
+           T T T T T T T T T T T T T T T T T T T T T T T T
+           T T T T T T T T T T T T T T T T T T T T T T T T
+
+
+ *******************************************************************************
+                                  <SYMLATTICE>
+ *******************************************************************************
+
+          find out symmetry properties of the lattice
+
+
+          crystal system accepted symmetry operations      48
+          accepted symmetry operations   NSYMACCEPTED      16
+          operations NSYM (loops)        NSYM              48
+          operations NSYM w/o INV        NSYM_WO_INV       24
+
+
+       I    Euler angles  INV SYMBOL TIM     shift  ->DQ     Q' 
+       1     0    0    0       E           0.00  0.00  0.00   1
+       2     0  180  180       C2x    T    0.00  0.00  0.00   1
+       3     0  180    0       C2y    T    0.00  0.00  0.00   1
+       4     0    0  180       C2z         0.00  0.00  0.00   1
+      15     0    0   90       C+4z        0.00  0.00  0.00   1
+      18     0    0  270       C-4z        0.00  0.00  0.00   1
+      19     0  180   90       C2a    T    0.00  0.00  0.00   1
+      20     0  180  270       C2b    T    0.00  0.00  0.00   1
+      25     0    0    0   I   I           0.00  0.00  0.00   1
+      26     0  180  180   I   sx     T    0.00  0.00  0.00   1
+      27     0  180    0   I   sy     T    0.00  0.00  0.00   1
+      28     0    0  180   I   sz          0.00  0.00  0.00   1
+      39     0    0   90   I   S-4z        0.00  0.00  0.00   1
+      42     0    0  270   I   S+4z        0.00  0.00  0.00   1
+      43     0  180   90   I   sda    T    0.00  0.00  0.00   1
+      44     0  180  270   I   sdb    T    0.00  0.00  0.00   1
+
+          the detected  16 symmetry operations form a group
+
+
+          BZ-wedges to be treated  NWEDGE   3
+          created by operations  
+           1  E       5  C+31    9  C-31
+
+
+ *******************************************************************************
+                                    <SYMROT>
+ *******************************************************************************
+
+          set up of rotation matrices  DROT  for IREL = 3
+
+          CHECK of rotation matrices   DROT  for COMPLEX spherical harmonics
+          comparison of analytical and numerical results
+          out of  6144 elements     0 deviate more than TOL =   1.0E-08
+          maximum deviation found:    2.0E-10
+
+
+
+ *******************************************************************************
+                                  <INIT_RADII>
+ *******************************************************************************
+
+
+                   muffin tin and Wigner-Seitz radii
+
+                   IM    RMT               RWS     final setting in  <INIT_RADII>
+                    1  2.72592584265594  3.01307191132914
+
+
+ *******************************************************************************
+                                 <POTRDSPR>
+ *******************************************************************************
+
+          POTFMTINP =  9
+
+ SPR-KKR dataset created by KKRSCF                                              
+  
+
+          radial mesh parameters:
+
+          IM    JRMT   R(JRMT)    RMT      JRWS    RWS       DX
+           1    716   2.71654   2.72593    721   3.01307   0.020720098
+
+          Bravais lattice:                cubic       face-centered
+          lattice constant  ALAT               7.71008
+          number of sites   NQ                       1
+          average Wigner-Seitz radius          3.01307
+
+
+
+          potential data for IT =  1 ..   1
+          =================================
+
+    1    0.000001 -157.999242    0.000000
+   31    0.000002 -157.998526    0.000000
+   61    0.000003 -157.997149    0.000000
+   91    0.000006 -157.994507    0.000000
+  121    0.000012 -157.989452    0.000000
+  151    0.000022 -157.979806    0.000000
+  181    0.000042 -157.961440    0.000000
+  211    0.000078 -157.926531    0.000000
+  241    0.000144 -157.860281    0.000000
+  271    0.000269 -157.734709    0.000000
+  301    0.000501 -157.497011    0.000000
+  331    0.000932 -157.048048    0.000000
+  361    0.001736 -156.204514    0.000000
+  391    0.003232 -154.640326    0.000000
+  421    0.006018 -151.820329    0.000000
+  451    0.011204 -146.961887    0.000000
+  481    0.020861 -138.989964    0.000000
+  511    0.038842 -126.580884    0.000000
+  541    0.072320 -108.537727    0.000000
+  571    0.134653  -84.801407    0.000000
+  601    0.250712  -57.694833    0.000000
+  631    0.466803  -31.575290   -0.000000
+  661    0.869145  -13.868970   -0.000000
+  691    1.618269   -3.785050    0.000000
+  721    3.013072    0.059622    0.000000
+  721    3.013072    0.059622    0.000000
+  
+
+                   spin-polarized calculation
+
+                   SELFENERGY applied:NONE      
+
+
+   number of lattice sites (NQ):   1
+
+   site NL mesh MGAM MTET MPHI   RWS  CPA NOQ IT ELMT VAL CONC QREP SYMG eq.sit.
+     1   4   1     0    0    0 3.0131  0   1                     1    1   1
+                                               1 Au    11 1.00
+   average                     3.0131          total   11.00
+
+   KMROT:     0   no M-rotation          MOMENTS_ROTATED:  F
+   QMVEC:   0.000  0.000  0.000
+
+
+
+   number of atomic types  (NT):   1
+
+   type TXTT   NL VAL COR mesh    RMT     RWS   NAT  CONC  on sites
+     1  Au      4  11  68   1   2.7259  3.0131   1  1.000   1
+
+
+
+
+ mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
+          FULLY relativistic calculation 
+
+          the  BREIT interaction  will be ignored
+
+          the  ORBITAL POLARISATION  will be ignored
+
+          solver for     spherical Dirac equation: BS           TOL = 2.0E-08
+
+          solver for spherical equation:     BS        
+
+
+          SWS =  3.013072     ALAT =  7.710083
+
+          NQ =  1     NL =  4     NLM =  16   NQ*NLM =  16
+                      NK =  7     NKM =  32     NKKR =  32     NLIN =  56
+
+          POTFMTINP = 9     POTFMTOUT = 9
+          RDTAU     = F
+          WRTAU     = F
+          PLOTPOT   = F     PLOTRHO   = F     PLOTSFN   = F
+          PLOT2DPOT = F     PLOT2DRHO = F
+          IPRINT    = 0     ITEST     = 0     WRMAT     = F
+          INITELOOP = T     RUNELOOP  = T     SPLITSS   = F
+          adjusted          BRAVAIS   = F
+          symmetrized       BASIS     = F
+          optimized         BASIS     = F
+          NO_SYM for        HOST      = F     CLU       = F     LINRESP   = F
+          symmetrize        MSS       = T     TAU       = F
+                            RHO       = T     POT       = F
+          LLOYD      = F
+          GF_CONV_RH = F
+          NONMAG     = F
+          FULLPOT    = F
+          FULLCHARGE = F
+
+          TASK       = ARPES     
+
+          SYSDIM     = 3D        
+          SYSTYPE    = BULK                          
+          SUBSYSTEM  = BULK                          
+          KKRMODE    = STANDARD-KKR                  
+
+ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+
+          energy path:  ONLY REAL ENERGIES   Trapez rule        
+          energies  :         300
+          E_min     :    0.291779
+          E_max     :    0.732771
+          Im(E)     :    0.000000
+          E_Fermi   :    0.585774
+  
+
+ *******************************************************************************
+                                   <STRINIT>
+ *******************************************************************************
+
+          parameters for calculation of structure constants:
+
+          primitive vectors for Bravais lattice
+
+            (   0.00000,   0.50000,   0.50000 )
+            (   0.50000,   0.00000,   0.50000 )
+            (   0.50000,   0.50000,   0.00000 )
+
+          basis vectors in units of a
+
+            (   0.00000,   0.00000,   0.00000 )
+
+          primitive vectors of reciprocal space
+                 in units of 2*pi/a
+
+            (  -1.00000,   1.00000,   1.00000 )
+            (   1.00000,  -1.00000,   1.00000 )
+            (   1.00000,   1.00000,  -1.00000 )
+
+          number of inequivalent QQP-block-matrices  NQQP_STR     =       1
+          reduced number of inequiv. block-matrices  NQQP_STR_RED =       1
+
+
+
+          RMAX  =    2.4119          GMAX  =    4.5582
+          RMAX1 =    0.0000          GMAX1 =    1.7321
+          RA    =    2.4119          GA    =    4.5582
+
+          NUMR  =         9          NUMG  =         7
+          NRDL  =       225          NGRL  =       265
+
+          for LMAX = 3   388 non-zero GAUNTS tabulated
+
+
+ *******************************************************************************
+            array sizes for calculation of structure constants
+ *******************************************************************************
+                                          used              available
+          G-vectors table       NGRL       265        NGRLMAX     729
+          R-vectors table       NRDL       225        NRDLMAX    1331
+          R-vectors (max.)      SMAX       225        NSDL        225
+          R-vectors (min.)      SMAX       225
+          l-max + 1             NL           4        NLMAX         4
+          sites                 NQ_STR       1        NQMAX         1
+          q-q'-blocks           NQQP_STR     1        LIMIT         1
+          auxilary array        R123MAX      4
+          auxilary array        G123MAX      4
+          Davis eq. (13)        J13MAX     113        LIMIT       300
+          Davis eq. (22)        J22MAX      30        LIMIT       150
+          Gaunts                LRGNT12    136
+          Gaunts                LRGNT123   388
+          Ewald parameter       ETA       0.39
+ *******************************************************************************
+
+
+          <INIT_MOD_STR>: section 1 of module MOD_STR initialized
+          allocated        1075  integers        131148  reals (incl. complex)
+          corresp. to         0  Mbytes               1  Mbytes
+
+
+ ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
+
+          parameters for k-space integration:
+          NWEDGE:   3  wedges:  1  5  9
+          regular k-mesh used for point sampling
+
+          k-vectors to start  NKPTS0             24000
+          k-vectors full BZ   NKTAB_FULL_BZ      21952
+          mesh parameters     NBGL                28   28   28
+          k-vectors created   NKTAB               1639
+          array size (NKTABMAX)                   2160
+
+
+
+          ****************************
+          no CPA-iteration required
+          ****************************
+
+
+ fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+
+          FILES:
+
+          potential :  ( 4) Au.pot
+          DOS       :  (10) Au_ARPES.dos
+  
+ 
+
+          **************************************************************
+          *                                                            *
+          *              ****   *****   *****   ******                 *
+          *             *    *  *    *  *       *                      *
+          *             *       *    *  *       *                      *
+          *              ****   *****   *****   *                      *
+          *                  *  *       *       *                      *
+          *             *    *  *       *       *                      *
+          *              ****   *       ******  ******                 *
+          *                                                            *
+          **************************************************************
+
+
+
+*******************************************************************************
+                        Angle resolved photoemission
+*******************************************************************************
+
+
+
+ -------------------------------------------------------------------------------
+
+
+
+
+          -----------------------------------------------
+          automatic creation of structure file for spec
+
+
+          -----------------------------------------------
+
+
+          3D bulk input used to create surface
+          Miller indices with respect to cryst. cell
+          Miller indices (hkl)         1         1         1
+          Surface will be terminated with IQ:         1
+          occupied by: Au
+
+
+          -----------------------------------------------
+          INFO kkrspec VIR: considering layers from  1 to  1
+          INFO kkrspec VIR: considering layers from  0 to 
+      LAYS =   1 >  LAYSM (mod_spec) =   0
+ bulkrepeat unit=   0.4451E+01  0.0000E+00 -0.3148E+01
+
+
+          File for layered structure will be created:
+          STRFIL=in_structur.inp                                                                 
+          UNIT  =        63
+
+
+          Surface barier:
+          Distance from the first layer Spin UP:  0.275000
+          Distance from the first layer Spin DN:  0.275000
+
+ -------------------------------------------------------------------------------
+
+
+
+
+ *******************************************************************************
+
+          *************************************************
+          **********   TABLE OF SPR-KKR SITES   ***********
+          ********** used for SPEC calculations ***********
+          *************************************************
+     LAYER       ATOM IN LAYER      SPR-KKR IQ 
+        1            1                1
+                            IT=    1         Au   conc=   1.000
+
+ -------------------------------------------------------------------------------
+
+
+
+
+          energy path (eV):
+          Nr. of energies:           300.000000
+          E_min :                      3.969861
+          E_max :                      9.969861
+          EWORK :                      5.000000
+          Inner Pot :                 12.969861
+          Im(V) Ini.:                  0.020000
+          Im(V) Fin.:                  2.000000
+
+
+          Geometry parameters (Light):
+          Photon energy:              50.000000
+          Polarisation:    P 
+          Polar angle:                45.000000
+          Azimuthal angle:            90.000000
+
+
+          Geometry parameters (Electrons):
+          Nr. of polar ang:       200
+          Polar angle range          -20.000000           20.000000
+          Nr. of azim. ang:         1
+          Azim. angle range            0.000000            0.000000
+ Spin density matrix used:
+          Vector of spin polarisation:             0.000000            0.000000            1.000000
+
+
+          Geometry parameters (Structure):
+          Nr. of reciprocal lattice vectors:            37
+          Total Nr. of layers:                          30
+          Nr. of layerdoublings: final state:           12
+          Nr. of layerdoublings: initial state:         12
+
+ -------------------------------------------------------------------------------
+
+
+
+          *************************
+          calculating      SPECTRUM
+          *************************
+          for more datails see also file:
+          Au_ARPES_SPEC.out                                                               
+
+
+          *************************
+          Results writen in files: 
+          *************************
+           
+          Au_ARPES_data.spc                                                               
+
+
+
+ *******************************************************************************
+                                 <THERMAL_INIT>
+ *******************************************************************************
+
+
+     No. of displacements:           1
+     mode to set dirs INIT_SVEC      0
+     type-dependent  RMSU_SCALE      F
+     Debye temperature:         170.00 [K]
+
+     FLUCT_DIR_SETTING: not set   
+     allowed input: SETFLUCT = M_T, MCS, RDLM, MLIN
+     N_TEMP_LAT:                 1
+     TEMP_LAT_MIN:           0.000
+     TEMP_LAT_MAX:           0.000
+
+       1 temperatures in the range  T =     0.00 --     0.00 [K]
+
+     NO thermal lattice vibrations NOR spin fluctuations to deal with
+
+     setting of parameters and array dimensions
+
+     NVIBFLU  =     1      NT      =     1
+     NVT      =     1      NVTMAX  =     1
+     NFT      =     1      NFTMAX  =     1
+     NVFT     =     1      NVFTMAX =     1
+
+
+
+          ****************************
+          no CPA-iteration required
+          ****************************
+
+  kp=    -1.149  e=  -0.19732E+01  i=   0.54697E-05  p=   0.34152E+00  iun=   0.36688E-05  idn=   0.18008E-05
+  kp=    -1.138  e=  -0.19732E+01  i=   0.51827E-05  p=   0.35391E+00  iun=   0.35085E-05  idn=   0.16742E-05
+  kp=    -1.127  e=  -0.19732E+01  i=   0.49365E-05  p=   0.36581E+00  iun=   0.33711E-05  idn=   0.15653E-05
+  kp=    -1.116  e=  -0.19732E+01  i=   0.47292E-05  p=   0.37697E+00  iun=   0.32560E-05  idn=   0.14732E-05
+  kp=    -1.105  e=  -0.19732E+01  i=   0.45595E-05  p=   0.38714E+00  iun=   0.31623E-05  idn=   0.13972E-05
+  kp=    -1.094  e=  -0.19732E+01  i=   0.44258E-05  p=   0.39607E+00  iun=   0.30894E-05  idn=   0.13364E-05
+  kp=    -1.083  e=  -0.19732E+01  i=   0.43271E-05  p=   0.40351E+00  iun=   0.30366E-05  idn=   0.12905E-05
+  kp=    -1.071  e=  -0.19732E+01  i=   0.42625E-05  p=   0.40922E+00  iun=   0.30034E-05  idn=   0.12591E-05
+  kp=    -1.060  e=  -0.19732E+01  i=   0.42314E-05  p=   0.41297E+00  iun=   0.29894E-05  idn=   0.12420E-05
+  kp=    -1.049  e=  -0.19732E+01  i=   0.42336E-05  p=   0.41456E+00  iun=   0.29943E-05  idn=   0.12393E-05
+  kp=    -1.038  e=  -0.19732E+01  i=   0.42693E-05  p=   0.41380E+00  iun=   0.30179E-05  idn=   0.12513E-05
+  kp=    -1.027  e=  -0.19732E+01  i=   0.43393E-05  p=   0.41050E+00  iun=   0.30603E-05  idn=   0.12790E-05
+  kp=    -1.015  e=  -0.19732E+01  i=   0.44452E-05  p=   0.40449E+00  iun=   0.31216E-05  idn=   0.13236E-05
+  kp=    -1.004  e=  -0.19732E+01  i=   0.45895E-05  p=   0.39556E+00  iun=   0.32025E-05  idn=   0.13870E-05
+  kp=    -0.993  e=  -0.19732E+01  i=   0.47764E-05  p=   0.38346E+00  iun=   0.33040E-05  idn=   0.14724E-05
+  kp=    -0.982  e=  -0.19732E+01  i=   0.50120E-05  p=   0.36788E+00  iun=   0.34279E-05  idn=   0.15841E-05
+  kp=    -0.970  e=  -0.19732E+01  i=   0.53058E-05  p=   0.34836E+00  iun=   0.35771E-05  idn=   0.17287E-05
+  kp=    -0.959  e=  -0.19732E+01  i=   0.56717E-05  p=   0.32426E+00  iun=   0.37554E-05  idn=   0.19163E-05
+  kp=    -0.948  e=  -0.19732E+01  i=   0.61315E-05  p=   0.29454E+00  iun=   0.39687E-05  idn=   0.21628E-05
+  kp=    -0.936  e=  -0.19732E+01  i=   0.67201E-05  p=   0.25746E+00  iun=   0.42251E-05  idn=   0.24950E-05
+  kp=    -0.925  e=  -0.19732E+01  i=   0.74974E-05  p=   0.21006E+00  iun=   0.45361E-05  idn=   0.29612E-05
+  kp=    -0.914  e=  -0.19732E+01  i=   0.85711E-05  p=   0.14711E+00  iun=   0.49160E-05  idn=   0.36551E-05
+  kp=    -0.902  e=  -0.19732E+01  i=   0.10135E-04  p=   0.59441E-01  iun=   0.53687E-05  idn=   0.47663E-05
+  kp=    -0.891  e=  -0.19732E+01  i=   0.12356E-04  p=  -0.53945E-01  iun=   0.58446E-05  idn=   0.65111E-05
+  kp=    -0.880  e=  -0.19732E+01  i=   0.14169E-04  p=  -0.92369E-01  iun=   0.64303E-05  idn=   0.77391E-05
+  kp=    -0.868  e=  -0.19732E+01  i=   0.13907E-04  p=  -0.70382E-01  iun=   0.64640E-05  idn=   0.74427E-05
+  kp=    -0.857  e=  -0.19732E+01  i=   0.12785E-04  p=  -0.57841E-01  iun=   0.60226E-05  idn=   0.67620E-05
+  kp=    -0.846  e=  -0.19732E+01  i=   0.11575E-04  p=  -0.10356E-01  iun=   0.57278E-05  idn=   0.58476E-05
+  kp=    -0.834  e=  -0.19732E+01  i=   0.12115E-04  p=   0.10365E+00  iun=   0.66854E-05  idn=   0.54296E-05
+  kp=    -0.823  e=  -0.19732E+01  i=   0.14146E-04  p=   0.77890E-01  iun=   0.76238E-05  idn=   0.65220E-05
+  kp=    -0.811  e=  -0.19732E+01  i=   0.14816E-04  p=  -0.29497E-01  iun=   0.71896E-05  idn=   0.76266E-05
+  kp=    -0.800  e=  -0.19732E+01  i=   0.14315E-04  p=  -0.10553E+00  iun=   0.64023E-05  idn=   0.79131E-05
+  kp=    -0.788  e=  -0.19732E+01  i=   0.13601E-04  p=  -0.14893E+00  iun=   0.57878E-05  idn=   0.78134E-05
+  kp=    -0.777  e=  -0.19732E+01  i=   0.12938E-04  p=  -0.17240E+00  iun=   0.53536E-05  idn=   0.75840E-05
+  kp=    -0.765  e=  -0.19732E+01  i=   0.12409E-04  p=  -0.17932E+00  iun=   0.50920E-05  idn=   0.73172E-05
+  kp=    -0.754  e=  -0.19732E+01  i=   0.12713E-04  p=  -0.13502E+00  iun=   0.54982E-05  idn=   0.72147E-05
+  kp=    -0.742  e=  -0.19732E+01  i=   0.19350E-04  p=   0.44296E-01  iun=   0.10104E-04  idn=   0.92465E-05
+  kp=    -0.731  e=  -0.19732E+01  i=   0.12549E-04  p=  -0.13334E+00  iun=   0.54380E-05  idn=   0.71114E-05
+  kp=    -0.719  e=  -0.19732E+01  i=   0.11404E-04  p=  -0.15776E+00  iun=   0.48025E-05  idn=   0.66016E-05
+  kp=    -0.708  e=  -0.19732E+01  i=   0.14271E-04  p=  -0.11846E+00  iun=   0.62905E-05  idn=   0.79810E-05
+  kp=    -0.696  e=  -0.19732E+01  i=   0.14655E-04  p=  -0.15449E+00  iun=   0.61954E-05  idn=   0.84595E-05
+  kp=    -0.685  e=  -0.19732E+01  i=   0.13846E-04  p=  -0.14111E+00  iun=   0.59460E-05  idn=   0.78998E-05
+  kp=    -0.673  e=  -0.19732E+01  i=   0.13542E-04  p=  -0.12186E+00  iun=   0.59456E-05  idn=   0.75959E-05
+  kp=    -0.662  e=  -0.19732E+01  i=   0.13388E-04  p=  -0.10414E+00  iun=   0.59967E-05  idn=   0.73909E-05
+  kp=    -0.650  e=  -0.19732E+01  i=   0.13284E-04  p=  -0.88193E-01  iun=   0.60564E-05  idn=   0.72280E-05
+  kp=    -0.639  e=  -0.19732E+01  i=   0.13199E-04  p=  -0.73736E-01  iun=   0.61126E-05  idn=   0.70859E-05
+  kp=    -0.627  e=  -0.19732E+01  i=   0.13118E-04  p=  -0.60580E-01  iun=   0.61618E-05  idn=   0.69565E-05
+  kp=    -0.615  e=  -0.19732E+01  i=   0.13041E-04  p=  -0.48646E-01  iun=   0.62035E-05  idn=   0.68379E-05
+  kp=    -0.604  e=  -0.19732E+01  i=   0.12970E-04  p=  -0.37940E-01  iun=   0.62390E-05  idn=   0.67311E-05
+  kp=    -0.592  e=  -0.19732E+01  i=   0.12909E-04  p=  -0.28521E-01  iun=   0.62706E-05  idn=   0.66388E-05
+  kp=    -0.581  e=  -0.19732E+01  i=   0.12865E-04  p=  -0.20469E-01  iun=   0.63006E-05  idn=   0.65640E-05
+  kp=    -0.569  e=  -0.19732E+01  i=   0.12841E-04  p=  -0.13867E-01  iun=   0.63315E-05  idn=   0.65096E-05
+  kp=    -0.557  e=  -0.19732E+01  i=   0.12843E-04  p=  -0.87760E-02  iun=   0.63653E-05  idn=   0.64780E-05
+  kp=    -0.546  e=  -0.19732E+01  i=   0.12874E-04  p=  -0.52271E-02  iun=   0.64033E-05  idn=   0.64705E-05
+  kp=    -0.534  e=  -0.19732E+01  i=   0.12933E-04  p=  -0.32141E-02  iun=   0.64459E-05  idn=   0.64875E-05
+  kp=    -0.522  e=  -0.19732E+01  i=   0.13021E-04  p=  -0.26918E-02  iun=   0.64929E-05  idn=   0.65279E-05
+  kp=    -0.511  e=  -0.19732E+01  i=   0.13132E-04  p=  -0.35779E-02  iun=   0.65425E-05  idn=   0.65895E-05
+  kp=    -0.499  e=  -0.19732E+01  i=   0.13262E-04  p=  -0.57562E-02  iun=   0.65928E-05  idn=   0.66691E-05
+  kp=    -0.488  e=  -0.19732E+01  i=   0.13403E-04  p=  -0.90804E-02  iun=   0.66407E-05  idn=   0.67624E-05
+  kp=    -0.476  e=  -0.19732E+01  i=   0.13547E-04  p=  -0.13380E-01  iun=   0.66831E-05  idn=   0.68643E-05
+  kp=    -0.464  e=  -0.19732E+01  i=   0.13686E-04  p=  -0.18467E-01  iun=   0.67167E-05  idn=   0.69695E-05
+  kp=    -0.453  e=  -0.19732E+01  i=   0.13811E-04  p=  -0.24145E-01  iun=   0.67386E-05  idn=   0.70721E-05
+  kp=    -0.441  e=  -0.19732E+01  i=   0.13912E-04  p=  -0.30218E-01  iun=   0.67460E-05  idn=   0.71664E-05
+  kp=    -0.429  e=  -0.19732E+01  i=   0.13984E-04  p=  -0.36499E-01  iun=   0.67368E-05  idn=   0.72472E-05
+  kp=    -0.417  e=  -0.19732E+01  i=   0.14019E-04  p=  -0.42813E-01  iun=   0.67095E-05  idn=   0.73097E-05
+  kp=    -0.406  e=  -0.19732E+01  i=   0.14013E-04  p=  -0.49009E-01  iun=   0.66629E-05  idn=   0.73497E-05
+  kp=    -0.394  e=  -0.19732E+01  i=   0.13961E-04  p=  -0.54960E-01  iun=   0.65968E-05  idn=   0.73640E-05
+  kp=    -0.382  e=  -0.19732E+01  i=   0.13862E-04  p=  -0.60569E-01  iun=   0.65111E-05  idn=   0.73507E-05
+  kp=    -0.371  e=  -0.19732E+01  i=   0.13715E-04  p=  -0.65780E-01  iun=   0.64062E-05  idn=   0.73084E-05
+  kp=    -0.359  e=  -0.19732E+01  i=   0.13520E-04  p=  -0.70586E-01  iun=   0.62829E-05  idn=   0.72373E-05
+  kp=    -0.347  e=  -0.19732E+01  i=   0.13281E-04  p=  -0.75046E-01  iun=   0.61420E-05  idn=   0.71387E-05
+  kp=    -0.335  e=  -0.19732E+01  i=   0.13000E-04  p=  -0.79297E-01  iun=   0.59844E-05  idn=   0.70152E-05
+  kp=    -0.324  e=  -0.19732E+01  i=   0.12682E-04  p=  -0.83569E-01  iun=   0.58110E-05  idn=   0.68709E-05
+  kp=    -0.312  e=  -0.19732E+01  i=   0.12334E-04  p=  -0.88186E-01  iun=   0.56229E-05  idn=   0.67106E-05
+  kp=    -0.300  e=  -0.19732E+01  i=   0.11962E-04  p=  -0.93554E-01  iun=   0.54213E-05  idn=   0.65403E-05
+  kp=    -0.288  e=  -0.19732E+01  i=   0.11574E-04  p=  -0.10014E+00  iun=   0.52075E-05  idn=   0.63664E-05
+  kp=    -0.277  e=  -0.19732E+01  i=   0.11178E-04  p=  -0.10841E+00  iun=   0.49832E-05  idn=   0.61949E-05
+  kp=    -0.265  e=  -0.19732E+01  i=   0.10782E-04  p=  -0.11880E+00  iun=   0.47505E-05  idn=   0.60313E-05
+  kp=    -0.253  e=  -0.19732E+01  i=   0.10391E-04  p=  -0.13163E+00  iun=   0.45117E-05  idn=   0.58796E-05
+  kp=    -0.241  e=  -0.19732E+01  i=   0.10012E-04  p=  -0.14706E+00  iun=   0.42696E-05  idn=   0.57419E-05
+  kp=    -0.230  e=  -0.19732E+01  i=   0.96457E-05  p=  -0.16503E+00  iun=   0.40270E-05  idn=   0.56188E-05
+  kp=    -0.218  e=  -0.19732E+01  i=   0.92953E-05  p=  -0.18524E+00  iun=   0.37867E-05  idn=   0.55086E-05
+  kp=    -0.206  e=  -0.19732E+01  i=   0.89606E-05  p=  -0.20721E+00  iun=   0.35519E-05  idn=   0.54087E-05
+  kp=    -0.194  e=  -0.19732E+01  i=   0.86407E-05  p=  -0.23019E+00  iun=   0.33259E-05  idn=   0.53149E-05
+  kp=    -0.183  e=  -0.19732E+01  i=   0.83345E-05  p=  -0.25324E+00  iun=   0.31119E-05  idn=   0.52226E-05
+  kp=    -0.171  e=  -0.19732E+01  i=   0.80399E-05  p=  -0.27526E+00  iun=   0.29134E-05  idn=   0.51265E-05
+  kp=    -0.159  e=  -0.19732E+01  i=   0.77543E-05  p=  -0.29504E+00  iun=   0.27332E-05  idn=   0.50211E-05
+  kp=    -0.147  e=  -0.19732E+01  i=   0.74744E-05  p=  -0.31141E+00  iun=   0.25734E-05  idn=   0.49010E-05
+  kp=    -0.136  e=  -0.19732E+01  i=   0.71958E-05  p=  -0.32332E+00  iun=   0.24346E-05  idn=   0.47612E-05
+  kp=    -0.124  e=  -0.19732E+01  i=   0.69134E-05  p=  -0.33000E+00  iun=   0.23160E-05  idn=   0.45974E-05
+  kp=    -0.112  e=  -0.19732E+01  i=   0.66222E-05  p=  -0.33108E+00  iun=   0.22149E-05  idn=   0.44073E-05
+  kp=    -0.100  e=  -0.19732E+01  i=   0.63189E-05  p=  -0.32654E+00  iun=   0.21277E-05  idn=   0.41911E-05
+  kp=    -0.088  e=  -0.19732E+01  i=   0.60034E-05  p=  -0.31658E+00  iun=   0.20514E-05  idn=   0.39520E-05
+  kp=    -0.077  e=  -0.19732E+01  i=   0.56801E-05  p=  -0.30120E+00  iun=   0.19846E-05  idn=   0.36955E-05
+  kp=    -0.065  e=  -0.19732E+01  i=   0.53583E-05  p=  -0.27983E+00  iun=   0.19294E-05  idn=   0.34289E-05
+  kp=    -0.053  e=  -0.19732E+01  i=   0.50513E-05  p=  -0.25116E+00  iun=   0.18913E-05  idn=   0.31600E-05
+  kp=    -0.041  e=  -0.19732E+01  i=   0.47752E-05  p=  -0.21326E+00  iun=   0.18784E-05  idn=   0.28968E-05
+  kp=    -0.029  e=  -0.19732E+01  i=   0.45473E-05  p=  -0.16445E+00  iun=   0.18997E-05  idn=   0.26476E-05
+  kp=    -0.018  e=  -0.19732E+01  i=   0.43841E-05  p=  -0.10451E+00  iun=   0.19629E-05  idn=   0.24211E-05
+  kp=    -0.006  e=  -0.19732E+01  i=   0.42987E-05  p=  -0.35932E-01  iun=   0.20721E-05  idn=   0.22266E-05
+  kp=     0.006  e=  -0.19732E+01  i=   0.42987E-05  p=   0.35930E-01  iun=   0.22266E-05  idn=   0.20721E-05
+  kp=     0.018  e=  -0.19732E+01  i=   0.43841E-05  p=   0.10450E+00  iun=   0.24211E-05  idn=   0.19630E-05
+  kp=     0.029  e=  -0.19732E+01  i=   0.45473E-05  p=   0.16445E+00  iun=   0.26476E-05  idn=   0.18998E-05
+  kp=     0.041  e=  -0.19732E+01  i=   0.47752E-05  p=   0.21326E+00  iun=   0.28968E-05  idn=   0.18784E-05
+  kp=     0.053  e=  -0.19732E+01  i=   0.50513E-05  p=   0.25115E+00  iun=   0.31600E-05  idn=   0.18913E-05
+  kp=     0.065  e=  -0.19732E+01  i=   0.53583E-05  p=   0.27983E+00  iun=   0.34289E-05  idn=   0.19295E-05
+  kp=     0.077  e=  -0.19732E+01  i=   0.56801E-05  p=   0.30120E+00  iun=   0.36955E-05  idn=   0.19846E-05
+  kp=     0.088  e=  -0.19732E+01  i=   0.60034E-05  p=   0.31658E+00  iun=   0.39520E-05  idn=   0.20514E-05
+  kp=     0.100  e=  -0.19732E+01  i=   0.63189E-05  p=   0.32654E+00  iun=   0.41912E-05  idn=   0.21278E-05
+  kp=     0.112  e=  -0.19732E+01  i=   0.66222E-05  p=   0.33108E+00  iun=   0.44074E-05  idn=   0.22149E-05
+  kp=     0.124  e=  -0.19732E+01  i=   0.69134E-05  p=   0.33000E+00  iun=   0.45974E-05  idn=   0.23160E-05
+  kp=     0.136  e=  -0.19732E+01  i=   0.71958E-05  p=   0.32332E+00  iun=   0.47612E-05  idn=   0.24346E-05
+  kp=     0.147  e=  -0.19732E+01  i=   0.74744E-05  p=   0.31141E+00  iun=   0.49010E-05  idn=   0.25734E-05
+  kp=     0.159  e=  -0.19732E+01  i=   0.77543E-05  p=   0.29504E+00  iun=   0.50211E-05  idn=   0.27333E-05
+  kp=     0.171  e=  -0.19732E+01  i=   0.80399E-05  p=   0.27526E+00  iun=   0.51265E-05  idn=   0.29134E-05
+  kp=     0.183  e=  -0.19732E+01  i=   0.83345E-05  p=   0.25324E+00  iun=   0.52226E-05  idn=   0.31119E-05
+  kp=     0.194  e=  -0.19732E+01  i=   0.86408E-05  p=   0.23019E+00  iun=   0.53149E-05  idn=   0.33259E-05
+  kp=     0.206  e=  -0.19732E+01  i=   0.89606E-05  p=   0.20721E+00  iun=   0.54087E-05  idn=   0.35520E-05
+  kp=     0.218  e=  -0.19732E+01  i=   0.92954E-05  p=   0.18524E+00  iun=   0.55086E-05  idn=   0.37867E-05
+  kp=     0.230  e=  -0.19732E+01  i=   0.96457E-05  p=   0.16502E+00  iun=   0.56188E-05  idn=   0.40270E-05
+  kp=     0.241  e=  -0.19732E+01  i=   0.10012E-04  p=   0.14706E+00  iun=   0.57419E-05  idn=   0.42696E-05
+  kp=     0.253  e=  -0.19732E+01  i=   0.10391E-04  p=   0.13163E+00  iun=   0.58796E-05  idn=   0.45117E-05
+  kp=     0.265  e=  -0.19732E+01  i=   0.10782E-04  p=   0.11880E+00  iun=   0.60313E-05  idn=   0.47505E-05
+  kp=     0.277  e=  -0.19732E+01  i=   0.11178E-04  p=   0.10840E+00  iun=   0.61949E-05  idn=   0.49832E-05
+  kp=     0.288  e=  -0.19732E+01  i=   0.11574E-04  p=   0.10013E+00  iun=   0.63664E-05  idn=   0.52075E-05
+  kp=     0.300  e=  -0.19732E+01  i=   0.11962E-04  p=   0.93552E-01  iun=   0.65403E-05  idn=   0.54213E-05
+  kp=     0.312  e=  -0.19732E+01  i=   0.12334E-04  p=   0.88185E-01  iun=   0.67106E-05  idn=   0.56229E-05
+  kp=     0.324  e=  -0.19732E+01  i=   0.12682E-04  p=   0.83569E-01  iun=   0.68708E-05  idn=   0.58110E-05
+  kp=     0.335  e=  -0.19732E+01  i=   0.13000E-04  p=   0.79296E-01  iun=   0.70152E-05  idn=   0.59844E-05
+  kp=     0.347  e=  -0.19732E+01  i=   0.13281E-04  p=   0.75045E-01  iun=   0.71387E-05  idn=   0.61420E-05
+  kp=     0.359  e=  -0.19732E+01  i=   0.13520E-04  p=   0.70586E-01  iun=   0.72373E-05  idn=   0.62829E-05
+  kp=     0.371  e=  -0.19732E+01  i=   0.13715E-04  p=   0.65779E-01  iun=   0.73084E-05  idn=   0.64062E-05
+  kp=     0.382  e=  -0.19732E+01  i=   0.13862E-04  p=   0.60568E-01  iun=   0.73506E-05  idn=   0.65111E-05
+  kp=     0.394  e=  -0.19732E+01  i=   0.13961E-04  p=   0.54959E-01  iun=   0.73640E-05  idn=   0.65967E-05
+  kp=     0.406  e=  -0.19732E+01  i=   0.14013E-04  p=   0.49009E-01  iun=   0.73496E-05  idn=   0.66629E-05
+  kp=     0.417  e=  -0.19732E+01  i=   0.14019E-04  p=   0.42813E-01  iun=   0.73096E-05  idn=   0.67094E-05
+  kp=     0.429  e=  -0.19732E+01  i=   0.13984E-04  p=   0.36498E-01  iun=   0.72472E-05  idn=   0.67368E-05
+  kp=     0.441  e=  -0.19732E+01  i=   0.13912E-04  p=   0.30217E-01  iun=   0.71664E-05  idn=   0.67460E-05
+  kp=     0.453  e=  -0.19732E+01  i=   0.13811E-04  p=   0.24144E-01  iun=   0.70720E-05  idn=   0.67386E-05
+  kp=     0.464  e=  -0.19732E+01  i=   0.13686E-04  p=   0.18465E-01  iun=   0.69694E-05  idn=   0.67167E-05
+  kp=     0.476  e=  -0.19732E+01  i=   0.13547E-04  p=   0.13379E-01  iun=   0.68643E-05  idn=   0.66830E-05
+  kp=     0.488  e=  -0.19732E+01  i=   0.13403E-04  p=   0.90792E-02  iun=   0.67623E-05  idn=   0.66406E-05
+  kp=     0.499  e=  -0.19732E+01  i=   0.13262E-04  p=   0.57550E-02  iun=   0.66691E-05  idn=   0.65928E-05
+  kp=     0.511  e=  -0.19732E+01  i=   0.13132E-04  p=   0.35767E-02  iun=   0.65895E-05  idn=   0.65425E-05
+  kp=     0.522  e=  -0.19732E+01  i=   0.13021E-04  p=   0.26906E-02  iun=   0.65279E-05  idn=   0.64929E-05
+  kp=     0.534  e=  -0.19732E+01  i=   0.12933E-04  p=   0.32129E-02  iun=   0.64875E-05  idn=   0.64460E-05
+  kp=     0.546  e=  -0.19732E+01  i=   0.12874E-04  p=   0.52260E-02  iun=   0.64705E-05  idn=   0.64033E-05
+  kp=     0.557  e=  -0.19732E+01  i=   0.12843E-04  p=   0.87750E-02  iun=   0.64780E-05  idn=   0.63653E-05
+  kp=     0.569  e=  -0.19732E+01  i=   0.12841E-04  p=   0.13866E-01  iun=   0.65096E-05  idn=   0.63315E-05
+  kp=     0.581  e=  -0.19732E+01  i=   0.12865E-04  p=   0.20469E-01  iun=   0.65640E-05  idn=   0.63006E-05
+  kp=     0.592  e=  -0.19732E+01  i=   0.12909E-04  p=   0.28520E-01  iun=   0.66388E-05  idn=   0.62706E-05
+  kp=     0.604  e=  -0.19732E+01  i=   0.12970E-04  p=   0.37939E-01  iun=   0.67311E-05  idn=   0.62390E-05
+  kp=     0.615  e=  -0.19732E+01  i=   0.13041E-04  p=   0.48645E-01  iun=   0.68379E-05  idn=   0.62035E-05
+  kp=     0.627  e=  -0.19732E+01  i=   0.13118E-04  p=   0.60580E-01  iun=   0.69565E-05  idn=   0.61618E-05
+  kp=     0.639  e=  -0.19732E+01  i=   0.13199E-04  p=   0.73736E-01  iun=   0.70859E-05  idn=   0.61127E-05
+  kp=     0.650  e=  -0.19732E+01  i=   0.13284E-04  p=   0.88192E-01  iun=   0.72280E-05  idn=   0.60564E-05
+  kp=     0.662  e=  -0.19732E+01  i=   0.13388E-04  p=   0.10414E+00  iun=   0.73909E-05  idn=   0.59967E-05
+  kp=     0.673  e=  -0.19732E+01  i=   0.13542E-04  p=   0.12186E+00  iun=   0.75959E-05  idn=   0.59457E-05
+  kp=     0.685  e=  -0.19732E+01  i=   0.13846E-04  p=   0.14111E+00  iun=   0.78998E-05  idn=   0.59460E-05
+  kp=     0.696  e=  -0.19732E+01  i=   0.14655E-04  p=   0.15449E+00  iun=   0.84595E-05  idn=   0.61954E-05
+  kp=     0.708  e=  -0.19732E+01  i=   0.14272E-04  p=   0.11845E+00  iun=   0.79811E-05  idn=   0.62905E-05
+  kp=     0.719  e=  -0.19732E+01  i=   0.11404E-04  p=   0.15776E+00  iun=   0.66016E-05  idn=   0.48025E-05
+  kp=     0.731  e=  -0.19732E+01  i=   0.12549E-04  p=   0.13334E+00  iun=   0.71114E-05  idn=   0.54381E-05
+  kp=     0.742  e=  -0.19732E+01  i=   0.19350E-04  p=  -0.44299E-01  iun=   0.92465E-05  idn=   0.10104E-04
+  kp=     0.754  e=  -0.19732E+01  i=   0.12713E-04  p=   0.13502E+00  iun=   0.72147E-05  idn=   0.54983E-05
+  kp=     0.765  e=  -0.19732E+01  i=   0.12409E-04  p=   0.17932E+00  iun=   0.73172E-05  idn=   0.50920E-05
+  kp=     0.777  e=  -0.19732E+01  i=   0.12938E-04  p=   0.17240E+00  iun=   0.75841E-05  idn=   0.53536E-05
+  kp=     0.788  e=  -0.19732E+01  i=   0.13601E-04  p=   0.14893E+00  iun=   0.78135E-05  idn=   0.57878E-05
+  kp=     0.800  e=  -0.19732E+01  i=   0.14315E-04  p=   0.10553E+00  iun=   0.79131E-05  idn=   0.64024E-05
+  kp=     0.811  e=  -0.19732E+01  i=   0.14816E-04  p=   0.29496E-01  iun=   0.76267E-05  idn=   0.71896E-05
+  kp=     0.823  e=  -0.19732E+01  i=   0.14146E-04  p=  -0.77890E-01  iun=   0.65220E-05  idn=   0.76239E-05
+  kp=     0.834  e=  -0.19732E+01  i=   0.12115E-04  p=  -0.10365E+00  iun=   0.54297E-05  idn=   0.66854E-05
+  kp=     0.846  e=  -0.19732E+01  i=   0.11575E-04  p=   0.10354E-01  iun=   0.58477E-05  idn=   0.57278E-05
+  kp=     0.857  e=  -0.19732E+01  i=   0.12785E-04  p=   0.57840E-01  iun=   0.67621E-05  idn=   0.60226E-05
+  kp=     0.868  e=  -0.19732E+01  i=   0.13907E-04  p=   0.70382E-01  iun=   0.74428E-05  idn=   0.64640E-05
+  kp=     0.880  e=  -0.19732E+01  i=   0.14169E-04  p=   0.92371E-01  iun=   0.77392E-05  idn=   0.64303E-05
+  kp=     0.891  e=  -0.19732E+01  i=   0.12356E-04  p=   0.53946E-01  iun=   0.65111E-05  idn=   0.58446E-05
+  kp=     0.902  e=  -0.19732E+01  i=   0.10135E-04  p=  -0.59441E-01  iun=   0.47663E-05  idn=   0.53687E-05
+  kp=     0.914  e=  -0.19732E+01  i=   0.85711E-05  p=  -0.14711E+00  iun=   0.36551E-05  idn=   0.49160E-05
+  kp=     0.925  e=  -0.19732E+01  i=   0.74974E-05  p=  -0.21006E+00  iun=   0.29612E-05  idn=   0.45361E-05
+  kp=     0.936  e=  -0.19732E+01  i=   0.67200E-05  p=  -0.25746E+00  iun=   0.24950E-05  idn=   0.42251E-05
+  kp=     0.948  e=  -0.19732E+01  i=   0.61314E-05  p=  -0.29454E+00  iun=   0.21627E-05  idn=   0.39687E-05
+  kp=     0.959  e=  -0.19732E+01  i=   0.56717E-05  p=  -0.32426E+00  iun=   0.19163E-05  idn=   0.37554E-05
+  kp=     0.970  e=  -0.19732E+01  i=   0.53058E-05  p=  -0.34836E+00  iun=   0.17287E-05  idn=   0.35770E-05
+  kp=     0.982  e=  -0.19732E+01  i=   0.50120E-05  p=  -0.36788E+00  iun=   0.15841E-05  idn=   0.34279E-05
+  kp=     0.993  e=  -0.19732E+01  i=   0.47763E-05  p=  -0.38346E+00  iun=   0.14724E-05  idn=   0.33039E-05
+  kp=     1.004  e=  -0.19732E+01  i=   0.45895E-05  p=  -0.39556E+00  iun=   0.13870E-05  idn=   0.32024E-05
+  kp=     1.015  e=  -0.19732E+01  i=   0.44451E-05  p=  -0.40450E+00  iun=   0.13235E-05  idn=   0.31216E-05
+  kp=     1.027  e=  -0.19732E+01  i=   0.43393E-05  p=  -0.41051E+00  iun=   0.12790E-05  idn=   0.30603E-05
+  kp=     1.038  e=  -0.19732E+01  i=   0.42692E-05  p=  -0.41380E+00  iun=   0.12513E-05  idn=   0.30179E-05
+  kp=     1.049  e=  -0.19732E+01  i=   0.42335E-05  p=  -0.41456E+00  iun=   0.12392E-05  idn=   0.29943E-05
+  kp=     1.060  e=  -0.19732E+01  i=   0.42314E-05  p=  -0.41297E+00  iun=   0.12420E-05  idn=   0.29894E-05
+  kp=     1.071  e=  -0.19732E+01  i=   0.42625E-05  p=  -0.40922E+00  iun=   0.12591E-05  idn=   0.30034E-05
+  kp=     1.083  e=  -0.19732E+01  i=   0.43271E-05  p=  -0.40351E+00  iun=   0.12905E-05  idn=   0.30366E-05
+  kp=     1.094  e=  -0.19732E+01  i=   0.44258E-05  p=  -0.39608E+00  iun=   0.13364E-05  idn=   0.30894E-05
+  kp=     1.105  e=  -0.19732E+01  i=   0.45595E-05  p=  -0.38714E+00  iun=   0.13972E-05  idn=   0.31623E-05
+  kp=     1.116  e=  -0.19732E+01  i=   0.47292E-05  p=  -0.37697E+00  iun=   0.14732E-05  idn=   0.32560E-05
+  kp=     1.127  e=  -0.19732E+01  i=   0.49365E-05  p=  -0.36581E+00  iun=   0.15653E-05  idn=   0.33711E-05
+  kp=     1.138  e=  -0.19732E+01  i=   0.51827E-05  p=  -0.35392E+00  iun=   0.16742E-05  idn=   0.35085E-05
+  kp=     1.149  e=  -0.19732E+01  i=   0.54696E-05  p=  -0.34152E+00  iun=   0.18008E-05  idn=   0.36688E-05
+  kp=    -1.149  e=  -0.19933E+01  i=   0.53556E-05  p=   0.35162E+00  iun=   0.36193E-05  idn=   0.17362E-05
+  kp=    -1.138  e=  -0.19933E+01  i=   0.50789E-05  p=   0.36373E+00  iun=   0.34631E-05  idn=   0.16158E-05
+  kp=    -1.127  e=  -0.19933E+01  i=   0.48394E-05  p=   0.37546E+00  iun=   0.33282E-05  idn=   0.15112E-05
+  kp=    -1.116  e=  -0.19933E+01  i=   0.46361E-05  p=   0.38659E+00  iun=   0.32142E-05  idn=   0.14219E-05
+  kp=    -1.105  e=  -0.19933E+01  i=   0.44678E-05  p=   0.39687E+00  iun=   0.31205E-05  idn=   0.13473E-05
+  kp=    -1.094  e=  -0.19933E+01  i=   0.43334E-05  p=   0.40605E+00  iun=   0.30465E-05  idn=   0.12869E-05
+  kp=    -1.082  e=  -0.19933E+01  i=   0.42318E-05  p=   0.41388E+00  iun=   0.29916E-05  idn=   0.12402E-05
+  kp=    -1.071  e=  -0.19933E+01  i=   0.41624E-05  p=   0.42013E+00  iun=   0.29556E-05  idn=   0.12068E-05
+  kp=    -1.060  e=  -0.19933E+01  i=   0.41245E-05  p=   0.42457E+00  iun=   0.29378E-05  idn=   0.11867E-05
+  kp=    -1.049  e=  -0.19933E+01  i=   0.41178E-05  p=   0.42699E+00  iun=   0.29381E-05  idn=   0.11798E-05
+  kp=    -1.038  e=  -0.19933E+01  i=   0.41425E-05  p=   0.42719E+00  iun=   0.29561E-05  idn=   0.11864E-05
+  kp=    -1.026  e=  -0.19933E+01  i=   0.41989E-05  p=   0.42500E+00  iun=   0.29917E-05  idn=   0.12072E-05
+  kp=    -1.015  e=  -0.19933E+01  i=   0.42882E-05  p=   0.42023E+00  iun=   0.30451E-05  idn=   0.12431E-05
+  kp=    -1.004  e=  -0.19933E+01  i=   0.44121E-05  p=   0.41269E+00  iun=   0.31165E-05  idn=   0.12956E-05
+  kp=    -0.993  e=  -0.19933E+01  i=   0.45738E-05  p=   0.40217E+00  iun=   0.32066E-05  idn=   0.13672E-05
+  kp=    -0.981  e=  -0.19933E+01  i=   0.47779E-05  p=   0.38839E+00  iun=   0.33168E-05  idn=   0.14611E-05
+  kp=    -0.970  e=  -0.19933E+01  i=   0.50313E-05  p=   0.37103E+00  iun=   0.34490E-05  idn=   0.15822E-05
+  kp=    -0.959  e=  -0.19933E+01  i=   0.53440E-05  p=   0.34958E+00  iun=   0.36061E-05  idn=   0.17379E-05
+  kp=    -0.948  e=  -0.19933E+01  i=   0.57316E-05  p=   0.32327E+00  iun=   0.37922E-05  idn=   0.19394E-05
+  kp=    -0.936  e=  -0.19933E+01  i=   0.62179E-05  p=   0.29080E+00  iun=   0.40131E-05  idn=   0.22049E-05
+  kp=    -0.925  e=  -0.19933E+01  i=   0.68432E-05  p=   0.25001E+00  iun=   0.42770E-05  idn=   0.25662E-05
+  kp=    -0.914  e=  -0.19933E+01  i=   0.76780E-05  p=   0.19708E+00  iun=   0.45956E-05  idn=   0.30824E-05
+  kp=    -0.902  e=  -0.19933E+01  i=   0.88532E-05  p=   0.12521E+00  iun=   0.49808E-05  idn=   0.38723E-05
+  kp=    -0.891  e=  -0.19933E+01  i=   0.10600E-04  p=   0.23096E-01  iun=   0.54222E-05  idn=   0.51774E-05
+  kp=    -0.880  e=  -0.19933E+01  i=   0.12885E-04  p=  -0.86446E-01  iun=   0.58856E-05  idn=   0.69995E-05
+  kp=    -0.868  e=  -0.19933E+01  i=   0.13959E-04  p=  -0.88353E-01  iun=   0.63629E-05  idn=   0.75963E-05
+  kp=    -0.857  e=  -0.19933E+01  i=   0.13129E-04  p=  -0.69235E-01  iun=   0.61100E-05  idn=   0.70189E-05
+  kp=    -0.845  e=  -0.19933E+01  i=   0.11837E-04  p=  -0.60369E-01  iun=   0.55614E-05  idn=   0.62760E-05
+  kp=    -0.834  e=  -0.19933E+01  i=   0.11036E-04  p=   0.22103E-01  iun=   0.56400E-05  idn=   0.53961E-05
+  kp=    -0.823  e=  -0.19933E+01  i=   0.12229E-04  p=   0.11800E+00  iun=   0.68358E-05  idn=   0.53929E-05
+  kp=    -0.811  e=  -0.19933E+01  i=   0.14171E-04  p=   0.60711E-01  iun=   0.75154E-05  idn=   0.66551E-05
+  kp=    -0.800  e=  -0.19933E+01  i=   0.14469E-04  p=  -0.42646E-01  iun=   0.69261E-05  idn=   0.75431E-05
+  kp=    -0.788  e=  -0.19933E+01  i=   0.13841E-04  p=  -0.11150E+00  iun=   0.61487E-05  idn=   0.76920E-05
+  kp=    -0.777  e=  -0.19933E+01  i=   0.13098E-04  p=  -0.15049E+00  iun=   0.55634E-05  idn=   0.75344E-05
+  kp=    -0.765  e=  -0.19933E+01  i=   0.12453E-04  p=  -0.16927E+00  iun=   0.51724E-05  idn=   0.72803E-05
+  kp=    -0.754  e=  -0.19933E+01  i=   0.12176E-04  p=  -0.15829E+00  iun=   0.51245E-05  idn=   0.70518E-05
+  kp=    -0.742  e=  -0.19933E+01  i=   0.17042E-04  p=   0.24777E-01  iun=   0.87320E-05  idn=   0.83097E-05
+  kp=    -0.731  e=  -0.19933E+01  i=   0.14079E-04  p=  -0.85560E-01  iun=   0.64371E-05  idn=   0.76416E-05
+  kp=    -0.719  e=  -0.19933E+01  i=   0.11517E-04  p=  -0.15651E+00  iun=   0.48572E-05  idn=   0.66597E-05
+  kp=    -0.708  e=  -0.19933E+01  i=   0.11754E-04  p=  -0.14472E+00  iun=   0.50266E-05  idn=   0.67276E-05
+  kp=    -0.696  e=  -0.19933E+01  i=   0.15066E-04  p=  -0.14071E+00  iun=   0.64732E-05  idn=   0.85931E-05
+  kp=    -0.685  e=  -0.19933E+01  i=   0.13901E-04  p=  -0.14976E+00  iun=   0.59095E-05  idn=   0.79914E-05
+  kp=    -0.673  e=  -0.19933E+01  i=   0.13409E-04  p=  -0.13300E+00  iun=   0.58129E-05  idn=   0.75964E-05
+  kp=    -0.662  e=  -0.19933E+01  i=   0.13187E-04  p=  -0.11635E+00  iun=   0.58264E-05  idn=   0.73606E-05
+  kp=    -0.650  e=  -0.19933E+01  i=   0.13055E-04  p=  -0.10162E+00  iun=   0.58641E-05  idn=   0.71908E-05
+  kp=    -0.638  e=  -0.19933E+01  i=   0.12957E-04  p=  -0.88642E-01  iun=   0.59044E-05  idn=   0.70529E-05
+  kp=    -0.627  e=  -0.19933E+01  i=   0.12875E-04  p=  -0.77155E-01  iun=   0.59407E-05  idn=   0.69341E-05
+  kp=    -0.615  e=  -0.19933E+01  i=   0.12802E-04  p=  -0.67002E-01  iun=   0.59720E-05  idn=   0.68297E-05
+  kp=    -0.604  e=  -0.19933E+01  i=   0.12738E-04  p=  -0.58118E-01  iun=   0.59991E-05  idn=   0.67394E-05
+  kp=    -0.592  e=  -0.19933E+01  i=   0.12689E-04  p=  -0.50497E-01  iun=   0.60239E-05  idn=   0.66646E-05
+  kp=    -0.581  e=  -0.19933E+01  i=   0.12656E-04  p=  -0.44165E-01  iun=   0.60487E-05  idn=   0.66077E-05
+  kp=    -0.569  e=  -0.19933E+01  i=   0.12646E-04  p=  -0.39154E-01  iun=   0.60756E-05  idn=   0.65708E-05
+  kp=    -0.557  e=  -0.19933E+01  i=   0.12662E-04  p=  -0.35486E-01  iun=   0.61063E-05  idn=   0.65556E-05
+  kp=    -0.546  e=  -0.19933E+01  i=   0.12705E-04  p=  -0.33164E-01  iun=   0.61419E-05  idn=   0.65632E-05
+  kp=    -0.534  e=  -0.19933E+01  i=   0.12776E-04  p=  -0.32165E-01  iun=   0.61825E-05  idn=   0.65935E-05
+  kp=    -0.522  e=  -0.19933E+01  i=   0.12873E-04  p=  -0.32439E-01  iun=   0.62276E-05  idn=   0.66452E-05
+  kp=    -0.511  e=  -0.19933E+01  i=   0.12992E-04  p=  -0.33907E-01  iun=   0.62756E-05  idn=   0.67161E-05
+  kp=    -0.499  e=  -0.19933E+01  i=   0.13127E-04  p=  -0.36466E-01  iun=   0.63243E-05  idn=   0.68030E-05
+  kp=    -0.487  e=  -0.19933E+01  i=   0.13273E-04  p=  -0.39985E-01  iun=   0.63711E-05  idn=   0.69018E-05
+  kp=    -0.476  e=  -0.19933E+01  i=   0.13421E-04  p=  -0.44317E-01  iun=   0.64129E-05  idn=   0.70076E-05
+  kp=    -0.464  e=  -0.19933E+01  i=   0.13562E-04  p=  -0.49295E-01  iun=   0.64468E-05  idn=   0.71153E-05
+  kp=    -0.452  e=  -0.19933E+01  i=   0.13689E-04  p=  -0.54749E-01  iun=   0.64699E-05  idn=   0.72194E-05
+  kp=    -0.441  e=  -0.19933E+01  i=   0.13794E-04  p=  -0.60506E-01  iun=   0.64799E-05  idn=   0.73145E-05
+  kp=    -0.429  e=  -0.19933E+01  i=   0.13870E-04  p=  -0.66396E-01  iun=   0.64745E-05  idn=   0.73955E-05
+  kp=    -0.417  e=  -0.19933E+01  i=   0.13910E-04  p=  -0.72267E-01  iun=   0.64524E-05  idn=   0.74577E-05
+  kp=    -0.406  e=  -0.19933E+01  i=   0.13910E-04  p=  -0.77979E-01  iun=   0.64126E-05  idn=   0.74973E-05
+  kp=    -0.394  e=  -0.19933E+01  i=   0.13866E-04  p=  -0.83416E-01  iun=   0.63545E-05  idn=   0.75111E-05
+  kp=    -0.382  e=  -0.19933E+01  i=   0.13775E-04  p=  -0.88487E-01  iun=   0.62781E-05  idn=   0.74970E-05
+  kp=    -0.371  e=  -0.19933E+01  i=   0.13637E-04  p=  -0.93138E-01  iun=   0.61834E-05  idn=   0.74536E-05
+  kp=    -0.359  e=  -0.19933E+01  i=   0.13452E-04  p=  -0.97356E-01  iun=   0.60710E-05  idn=   0.73806E-05
+  kp=    -0.347  e=  -0.19933E+01  i=   0.13220E-04  p=  -0.10119E+00  iun=   0.59413E-05  idn=   0.72791E-05
+  kp=    -0.335  e=  -0.19933E+01  i=   0.12946E-04  p=  -0.10476E+00  iun=   0.57949E-05  idn=   0.71510E-05
+  kp=    -0.324  e=  -0.19933E+01  i=   0.12632E-04  p=  -0.10827E+00  iun=   0.56321E-05  idn=   0.69998E-05
+  kp=    -0.312  e=  -0.19933E+01  i=   0.12284E-04  p=  -0.11205E+00  iun=   0.54536E-05  idn=   0.68299E-05
+  kp=    -0.300  e=  -0.19933E+01  i=   0.11907E-04  p=  -0.11648E+00  iun=   0.52600E-05  idn=   0.66469E-05
+  kp=    -0.288  e=  -0.19933E+01  i=   0.11509E-04  p=  -0.12205E+00  iun=   0.50522E-05  idn=   0.64568E-05
+  kp=    -0.277  e=  -0.19933E+01  i=   0.11098E-04  p=  -0.12927E+00  iun=   0.48316E-05  idn=   0.62662E-05
+  kp=    -0.265  e=  -0.19933E+01  i=   0.10681E-04  p=  -0.13863E+00  iun=   0.46001E-05  idn=   0.60808E-05
+  kp=    -0.253  e=  -0.19933E+01  i=   0.10266E-04  p=  -0.15055E+00  iun=   0.43601E-05  idn=   0.59056E-05
+  kp=    -0.241  e=  -0.19933E+01  i=   0.98589E-05  p=  -0.16528E+00  iun=   0.41147E-05  idn=   0.57442E-05
+  kp=    -0.230  e=  -0.19933E+01  i=   0.94653E-05  p=  -0.18285E+00  iun=   0.38673E-05  idn=   0.55980E-05
+  kp=    -0.218  e=  -0.19933E+01  i=   0.90883E-05  p=  -0.20305E+00  iun=   0.36214E-05  idn=   0.54669E-05
+  kp=    -0.206  e=  -0.19933E+01  i=   0.87297E-05  p=  -0.22543E+00  iun=   0.33809E-05  idn=   0.53488E-05
+  kp=    -0.194  e=  -0.19933E+01  i=   0.83902E-05  p=  -0.24926E+00  iun=   0.31494E-05  idn=   0.52408E-05
+  kp=    -0.183  e=  -0.19933E+01  i=   0.80691E-05  p=  -0.27360E+00  iun=   0.29307E-05  idn=   0.51384E-05
+  kp=    -0.171  e=  -0.19933E+01  i=   0.77653E-05  p=  -0.29730E+00  iun=   0.27284E-05  idn=   0.50370E-05
+  kp=    -0.159  e=  -0.19933E+01  i=   0.74764E-05  p=  -0.31910E+00  iun=   0.25453E-05  idn=   0.49311E-05
+  kp=    -0.147  e=  -0.19933E+01  i=   0.71991E-05  p=  -0.33776E+00  iun=   0.23838E-05  idn=   0.48153E-05
+  kp=    -0.136  e=  -0.19933E+01  i=   0.69291E-05  p=  -0.35210E+00  iun=   0.22447E-05  idn=   0.46844E-05
+  kp=    -0.124  e=  -0.19933E+01  i=   0.66612E-05  p=  -0.36120E+00  iun=   0.21276E-05  idn=   0.45336E-05
+  kp=    -0.112  e=  -0.19933E+01  i=   0.63902E-05  p=  -0.36443E+00  iun=   0.20307E-05  idn=   0.43595E-05
+  kp=    -0.100  e=  -0.19933E+01  i=   0.61115E-05  p=  -0.36149E+00  iun=   0.19511E-05  idn=   0.41604E-05
+  kp=    -0.088  e=  -0.19933E+01  i=   0.58234E-05  p=  -0.35230E+00  iun=   0.18859E-05  idn=   0.39375E-05
+  kp=    -0.077  e=  -0.19933E+01  i=   0.55276E-05  p=  -0.33665E+00  iun=   0.18334E-05  idn=   0.36942E-05
+  kp=    -0.065  e=  -0.19933E+01  i=   0.52309E-05  p=  -0.31387E+00  iun=   0.17945E-05  idn=   0.34363E-05
+  kp=    -0.053  e=  -0.19933E+01  i=   0.49445E-05  p=  -0.28251E+00  iun=   0.17738E-05  idn=   0.31707E-05
+  kp=    -0.041  e=  -0.19933E+01  i=   0.46835E-05  p=  -0.24049E+00  iun=   0.17786E-05  idn=   0.29049E-05
+  kp=    -0.029  e=  -0.19933E+01  i=   0.44654E-05  p=  -0.18589E+00  iun=   0.18177E-05  idn=   0.26477E-05
+  kp=    -0.018  e=  -0.19933E+01  i=   0.43075E-05  p=  -0.11837E+00  iun=   0.18988E-05  idn=   0.24087E-05
+  kp=    -0.006  e=  -0.19933E+01  i=   0.42244E-05  p=  -0.40746E-01  iun=   0.20261E-05  idn=   0.21983E-05
+  kp=     0.006  e=  -0.19933E+01  i=   0.42244E-05  p=   0.40745E-01  iun=   0.21983E-05  idn=   0.20261E-05
+  kp=     0.018  e=  -0.19933E+01  i=   0.43075E-05  p=   0.11837E+00  iun=   0.24087E-05  idn=   0.18988E-05
+  kp=     0.029  e=  -0.19933E+01  i=   0.44654E-05  p=   0.18589E+00  iun=   0.26477E-05  idn=   0.18177E-05
+  kp=     0.041  e=  -0.19933E+01  i=   0.46835E-05  p=   0.24049E+00  iun=   0.29049E-05  idn=   0.17786E-05
+  kp=     0.053  e=  -0.19933E+01  i=   0.49445E-05  p=   0.28251E+00  iun=   0.31707E-05  idn=   0.17738E-05
+  kp=     0.065  e=  -0.19933E+01  i=   0.52309E-05  p=   0.31387E+00  iun=   0.34363E-05  idn=   0.17945E-05
+  kp=     0.077  e=  -0.19933E+01  i=   0.55276E-05  p=   0.33665E+00  iun=   0.36943E-05  idn=   0.18334E-05
+  kp=     0.088  e=  -0.19933E+01  i=   0.58234E-05  p=   0.35230E+00  iun=   0.39375E-05  idn=   0.18859E-05
+  kp=     0.100  e=  -0.19933E+01  i=   0.61116E-05  p=   0.36149E+00  iun=   0.41604E-05  idn=   0.19511E-05
+  kp=     0.112  e=  -0.19933E+01  i=   0.63902E-05  p=   0.36443E+00  iun=   0.43595E-05  idn=   0.20307E-05
+  kp=     0.124  e=  -0.19933E+01  i=   0.66612E-05  p=   0.36120E+00  iun=   0.45336E-05  idn=   0.21276E-05
+  kp=     0.136  e=  -0.19933E+01  i=   0.69291E-05  p=   0.35210E+00  iun=   0.46844E-05  idn=   0.22447E-05
+  kp=     0.147  e=  -0.19933E+01  i=   0.71992E-05  p=   0.33776E+00  iun=   0.48154E-05  idn=   0.23838E-05
+  kp=     0.159  e=  -0.19933E+01  i=   0.74765E-05  p=   0.31910E+00  iun=   0.49311E-05  idn=   0.25454E-05
+  kp=     0.171  e=  -0.19933E+01  i=   0.77654E-05  p=   0.29730E+00  iun=   0.50370E-05  idn=   0.27284E-05
+  kp=     0.183  e=  -0.19933E+01  i=   0.80692E-05  p=   0.27360E+00  iun=   0.51384E-05  idn=   0.29307E-05
+  kp=     0.194  e=  -0.19933E+01  i=   0.83902E-05  p=   0.24926E+00  iun=   0.52408E-05  idn=   0.31494E-05
+  kp=     0.206  e=  -0.19933E+01  i=   0.87298E-05  p=   0.22543E+00  iun=   0.53488E-05  idn=   0.33809E-05
+  kp=     0.218  e=  -0.19933E+01  i=   0.90883E-05  p=   0.20305E+00  iun=   0.54669E-05  idn=   0.36215E-05
+  kp=     0.230  e=  -0.19933E+01  i=   0.94653E-05  p=   0.18285E+00  iun=   0.55980E-05  idn=   0.38673E-05
+  kp=     0.241  e=  -0.19933E+01  i=   0.98589E-05  p=   0.16528E+00  iun=   0.57442E-05  idn=   0.41147E-05
+  kp=     0.253  e=  -0.19933E+01  i=   0.10266E-04  p=   0.15055E+00  iun=   0.59056E-05  idn=   0.43601E-05
+  kp=     0.265  e=  -0.19933E+01  i=   0.10681E-04  p=   0.13863E+00  iun=   0.60808E-05  idn=   0.46001E-05
+  kp=     0.277  e=  -0.19933E+01  i=   0.11098E-04  p=   0.12927E+00  iun=   0.62662E-05  idn=   0.48316E-05
+  kp=     0.288  e=  -0.19933E+01  i=   0.11509E-04  p=   0.12205E+00  iun=   0.64568E-05  idn=   0.50522E-05
+  kp=     0.300  e=  -0.19933E+01  i=   0.11907E-04  p=   0.11648E+00  iun=   0.66469E-05  idn=   0.52600E-05
+  kp=     0.312  e=  -0.19933E+01  i=   0.12284E-04  p=   0.11205E+00  iun=   0.68299E-05  idn=   0.54536E-05
+  kp=     0.324  e=  -0.19933E+01  i=   0.12632E-04  p=   0.10827E+00  iun=   0.69998E-05  idn=   0.56321E-05
+  kp=     0.335  e=  -0.19933E+01  i=   0.12946E-04  p=   0.10476E+00  iun=   0.71510E-05  idn=   0.57949E-05
+  kp=     0.347  e=  -0.19933E+01  i=   0.13220E-04  p=   0.10119E+00  iun=   0.72791E-05  idn=   0.59413E-05
+  kp=     0.359  e=  -0.19933E+01  i=   0.13452E-04  p=   0.97355E-01  iun=   0.73806E-05  idn=   0.60710E-05
+  kp=     0.371  e=  -0.19933E+01  i=   0.13637E-04  p=   0.93137E-01  iun=   0.74535E-05  idn=   0.61834E-05
+  kp=     0.382  e=  -0.19933E+01  i=   0.13775E-04  p=   0.88487E-01  iun=   0.74970E-05  idn=   0.62781E-05
+  kp=     0.394  e=  -0.19933E+01  i=   0.13866E-04  p=   0.83415E-01  iun=   0.75111E-05  idn=   0.63545E-05
+  kp=     0.406  e=  -0.19933E+01  i=   0.13910E-04  p=   0.77978E-01  iun=   0.74973E-05  idn=   0.64126E-05
+  kp=     0.417  e=  -0.19933E+01  i=   0.13910E-04  p=   0.72266E-01  iun=   0.74577E-05  idn=   0.64524E-05
+  kp=     0.429  e=  -0.19933E+01  i=   0.13870E-04  p=   0.66396E-01  iun=   0.73954E-05  idn=   0.64745E-05
+  kp=     0.441  e=  -0.19933E+01  i=   0.13794E-04  p=   0.60505E-01  iun=   0.73145E-05  idn=   0.64799E-05
+  kp=     0.452  e=  -0.19933E+01  i=   0.13689E-04  p=   0.54748E-01  iun=   0.72194E-05  idn=   0.64699E-05
+  kp=     0.464  e=  -0.19933E+01  i=   0.13562E-04  p=   0.49294E-01  iun=   0.71153E-05  idn=   0.64468E-05
+  kp=     0.476  e=  -0.19933E+01  i=   0.13421E-04  p=   0.44315E-01  iun=   0.70076E-05  idn=   0.64129E-05
+  kp=     0.487  e=  -0.19933E+01  i=   0.13273E-04  p=   0.39984E-01  iun=   0.69018E-05  idn=   0.63711E-05
+  kp=     0.499  e=  -0.19933E+01  i=   0.13127E-04  p=   0.36464E-01  iun=   0.68030E-05  idn=   0.63243E-05
+  kp=     0.511  e=  -0.19933E+01  i=   0.12992E-04  p=   0.33906E-01  iun=   0.67161E-05  idn=   0.62756E-05
+  kp=     0.522  e=  -0.19933E+01  i=   0.12873E-04  p=   0.32438E-01  iun=   0.66452E-05  idn=   0.62276E-05
+  kp=     0.534  e=  -0.19933E+01  i=   0.12776E-04  p=   0.32164E-01  iun=   0.65935E-05  idn=   0.61825E-05
+  kp=     0.546  e=  -0.19933E+01  i=   0.12705E-04  p=   0.33163E-01  iun=   0.65632E-05  idn=   0.61419E-05
+  kp=     0.557  e=  -0.19933E+01  i=   0.12662E-04  p=   0.35485E-01  iun=   0.65556E-05  idn=   0.61063E-05
+  kp=     0.569  e=  -0.19933E+01  i=   0.12646E-04  p=   0.39153E-01  iun=   0.65708E-05  idn=   0.60756E-05
+  kp=     0.581  e=  -0.19933E+01  i=   0.12656E-04  p=   0.44164E-01  iun=   0.66077E-05  idn=   0.60487E-05
+  kp=     0.592  e=  -0.19933E+01  i=   0.12689E-04  p=   0.50496E-01  iun=   0.66646E-05  idn=   0.60239E-05
+  kp=     0.604  e=  -0.19933E+01  i=   0.12738E-04  p=   0.58117E-01  iun=   0.67394E-05  idn=   0.59991E-05
+  kp=     0.615  e=  -0.19933E+01  i=   0.12802E-04  p=   0.67001E-01  iun=   0.68297E-05  idn=   0.59720E-05
+  kp=     0.627  e=  -0.19933E+01  i=   0.12875E-04  p=   0.77154E-01  iun=   0.69341E-05  idn=   0.59407E-05
+  kp=     0.638  e=  -0.19933E+01  i=   0.12957E-04  p=   0.88641E-01  iun=   0.70529E-05  idn=   0.59044E-05
+  kp=     0.650  e=  -0.19933E+01  i=   0.13055E-04  p=   0.10162E+00  iun=   0.71908E-05  idn=   0.58642E-05
+  kp=     0.662  e=  -0.19933E+01  i=   0.13187E-04  p=   0.11635E+00  iun=   0.73606E-05  idn=   0.58264E-05
+  kp=     0.673  e=  -0.19933E+01  i=   0.13409E-04  p=   0.13300E+00  iun=   0.75964E-05  idn=   0.58129E-05
+  kp=     0.685  e=  -0.19933E+01  i=   0.13901E-04  p=   0.14976E+00  iun=   0.79914E-05  idn=   0.59095E-05
+  kp=     0.696  e=  -0.19933E+01  i=   0.15066E-04  p=   0.14071E+00  iun=   0.85931E-05  idn=   0.64732E-05
+  kp=     0.708  e=  -0.19933E+01  i=   0.11754E-04  p=   0.14472E+00  iun=   0.67276E-05  idn=   0.50266E-05
+  kp=     0.719  e=  -0.19933E+01  i=   0.11517E-04  p=   0.15651E+00  iun=   0.66597E-05  idn=   0.48572E-05
+  kp=     0.731  e=  -0.19933E+01  i=   0.14079E-04  p=   0.85557E-01  iun=   0.76416E-05  idn=   0.64371E-05
+  kp=     0.742  e=  -0.19933E+01  i=   0.17042E-04  p=  -0.24780E-01  iun=   0.83098E-05  idn=   0.87321E-05
+  kp=     0.754  e=  -0.19933E+01  i=   0.12176E-04  p=   0.15829E+00  iun=   0.70519E-05  idn=   0.51245E-05
+  kp=     0.765  e=  -0.19933E+01  i=   0.12453E-04  p=   0.16927E+00  iun=   0.72803E-05  idn=   0.51724E-05
+  kp=     0.777  e=  -0.19933E+01  i=   0.13098E-04  p=   0.15049E+00  iun=   0.75345E-05  idn=   0.55634E-05
+  kp=     0.788  e=  -0.19933E+01  i=   0.13841E-04  p=   0.11150E+00  iun=   0.76920E-05  idn=   0.61488E-05
+  kp=     0.800  e=  -0.19933E+01  i=   0.14469E-04  p=   0.42646E-01  iun=   0.75431E-05  idn=   0.69261E-05
+  kp=     0.811  e=  -0.19933E+01  i=   0.14171E-04  p=  -0.60711E-01  iun=   0.66552E-05  idn=   0.75155E-05
+  kp=     0.823  e=  -0.19933E+01  i=   0.12229E-04  p=  -0.11800E+00  iun=   0.53929E-05  idn=   0.68359E-05
+  kp=     0.834  e=  -0.19933E+01  i=   0.11036E-04  p=  -0.22104E-01  iun=   0.53961E-05  idn=   0.56401E-05
+  kp=     0.845  e=  -0.19933E+01  i=   0.11837E-04  p=   0.60368E-01  iun=   0.62760E-05  idn=   0.55614E-05
+  kp=     0.857  e=  -0.19933E+01  i=   0.13129E-04  p=   0.69234E-01  iun=   0.70190E-05  idn=   0.61100E-05
+  kp=     0.868  e=  -0.19933E+01  i=   0.13959E-04  p=   0.88354E-01  iun=   0.75963E-05  idn=   0.63629E-05
+  kp=     0.880  e=  -0.19933E+01  i=   0.12885E-04  p=   0.86448E-01  iun=   0.69995E-05  idn=   0.58856E-05
+  kp=     0.891  e=  -0.19933E+01  i=   0.10600E-04  p=  -0.23096E-01  iun=   0.51774E-05  idn=   0.54222E-05
+  kp=     0.902  e=  -0.19933E+01  i=   0.88532E-05  p=  -0.12521E+00  iun=   0.38723E-05  idn=   0.49808E-05
+  kp=     0.914  e=  -0.19933E+01  i=   0.76780E-05  p=  -0.19708E+00  iun=   0.30824E-05  idn=   0.45956E-05
+  kp=     0.925  e=  -0.19933E+01  i=   0.68432E-05  p=  -0.25001E+00  iun=   0.25662E-05  idn=   0.42770E-05
+  kp=     0.936  e=  -0.19933E+01  i=   0.62179E-05  p=  -0.29080E+00  iun=   0.22049E-05  idn=   0.40131E-05
+  kp=     0.948  e=  -0.19933E+01  i=   0.57315E-05  p=  -0.32327E+00  iun=   0.19394E-05  idn=   0.37922E-05
+  kp=     0.959  e=  -0.19933E+01  i=   0.53440E-05  p=  -0.34959E+00  iun=   0.17379E-05  idn=   0.36061E-05
+  kp=     0.970  e=  -0.19933E+01  i=   0.50312E-05  p=  -0.37103E+00  iun=   0.15822E-05  idn=   0.34490E-05
+  kp=     0.981  e=  -0.19933E+01  i=   0.47779E-05  p=  -0.38840E+00  iun=   0.14611E-05  idn=   0.33168E-05
+  kp=     0.993  e=  -0.19933E+01  i=   0.45738E-05  p=  -0.40217E+00  iun=   0.13672E-05  idn=   0.32066E-05
+  kp=     1.004  e=  -0.19933E+01  i=   0.44121E-05  p=  -0.41269E+00  iun=   0.12956E-05  idn=   0.31165E-05
+  kp=     1.015  e=  -0.19933E+01  i=   0.42882E-05  p=  -0.42023E+00  iun=   0.12431E-05  idn=   0.30451E-05
+  kp=     1.026  e=  -0.19933E+01  i=   0.41989E-05  p=  -0.42500E+00  iun=   0.12072E-05  idn=   0.29917E-05
+  kp=     1.038  e=  -0.19933E+01  i=   0.41425E-05  p=  -0.42720E+00  iun=   0.11864E-05  idn=   0.29561E-05
+  kp=     1.049  e=  -0.19933E+01  i=   0.41178E-05  p=  -0.42699E+00  iun=   0.11798E-05  idn=   0.29381E-05
+  kp=     1.060  e=  -0.19933E+01  i=   0.41245E-05  p=  -0.42458E+00  iun=   0.11867E-05  idn=   0.29378E-05
+  kp=     1.071  e=  -0.19933E+01  i=   0.41623E-05  p=  -0.42014E+00  iun=   0.12068E-05  idn=   0.29556E-05
+  kp=     1.082  e=  -0.19933E+01  i=   0.42318E-05  p=  -0.41389E+00  iun=   0.12402E-05  idn=   0.29916E-05
+  kp=     1.094  e=  -0.19933E+01  i=   0.43333E-05  p=  -0.40605E+00  iun=   0.12869E-05  idn=   0.30465E-05
+  kp=     1.105  e=  -0.19933E+01  i=   0.44678E-05  p=  -0.39687E+00  iun=   0.13473E-05  idn=   0.31205E-05
+  kp=     1.116  e=  -0.19933E+01  i=   0.46361E-05  p=  -0.38659E+00  iun=   0.14219E-05  idn=   0.32142E-05
+  kp=     1.127  e=  -0.19933E+01  i=   0.48394E-05  p=  -0.37546E+00  iun=   0.15112E-05  idn=   0.33282E-05
+  kp=     1.138  e=  -0.19933E+01  i=   0.50788E-05  p=  -0.36373E+00  iun=   0.16158E-05  idn=   0.34631E-05
+  kp=     1.149  e=  -0.19933E+01  i=   0.53555E-05  p=  -0.35162E+00  iun=   0.17362E-05  idn=   0.36193E-05
+  kp=    -1.122  e=  -0.40000E+01  i=   0.10969E-05  p=   0.18257E+00  iun=   0.64860E-06  idn=   0.44834E-06
+  kp=    -1.111  e=  -0.40000E+01  i=   0.11326E-05  p=   0.22999E+00  iun=   0.69655E-06  idn=   0.43607E-06
+  kp=    -1.100  e=  -0.40000E+01  i=   0.11904E-05  p=   0.28811E+00  iun=   0.76670E-06  idn=   0.42373E-06
+  kp=    -1.089  e=  -0.40000E+01  i=   0.12796E-05  p=   0.35632E+00  iun=   0.86779E-06  idn=   0.41184E-06
+  kp=    -1.079  e=  -0.40000E+01  i=   0.14155E-05  p=   0.43306E+00  iun=   0.10142E-05  idn=   0.40124E-06
+  kp=    -1.068  e=  -0.40000E+01  i=   0.16238E-05  p=   0.51548E+00  iun=   0.12304E-05  idn=   0.39337E-06
+  kp=    -1.057  e=  -0.40000E+01  i=   0.19508E-05  p=   0.59925E+00  iun=   0.15599E-05  idn=   0.39088E-06
+  kp=    -1.046  e=  -0.40000E+01  i=   0.24844E-05  p=   0.67881E+00  iun=   0.20854E-05  idn=   0.39898E-06
+  kp=    -1.035  e=  -0.40000E+01  i=   0.34055E-05  p=   0.74817E+00  iun=   0.29767E-05  idn=   0.42881E-06
+  kp=    -1.024  e=  -0.40000E+01  i=   0.51099E-05  p=   0.80206E+00  iun=   0.46042E-05  idn=   0.50573E-06
+  kp=    -1.013  e=  -0.40000E+01  i=   0.87357E-05  p=   0.83835E+00  iun=   0.80297E-05  idn=   0.70606E-06
+  kp=    -1.002  e=  -0.40000E+01  i=   0.16847E-04  p=   0.85525E+00  iun=   0.15628E-04  idn=   0.12193E-05
+  kp=    -0.991  e=  -0.40000E+01  i=   0.31916E-04  p=   0.85553E+00  iun=   0.29611E-04  idn=   0.23055E-05
+  kp=    -0.980  e=  -0.40000E+01  i=   0.33467E-04  p=   0.84274E+00  iun=   0.30835E-04  idn=   0.26315E-05
+  kp=    -0.969  e=  -0.40000E+01  i=   0.19141E-04  p=   0.82101E+00  iun=   0.17428E-04  idn=   0.17130E-05
+  kp=    -0.958  e=  -0.40000E+01  i=   0.10570E-04  p=   0.79417E+00  iun=   0.94820E-05  idn=   0.10878E-05
+  kp=    -0.947  e=  -0.40000E+01  i=   0.65352E-05  p=   0.76528E+00  iun=   0.57682E-05  idn=   0.76699E-06
+  kp=    -0.936  e=  -0.40000E+01  i=   0.44660E-05  p=   0.73654E+00  iun=   0.38777E-05  idn=   0.58830E-06
+  kp=    -0.925  e=  -0.40000E+01  i=   0.32855E-05  p=   0.70936E+00  iun=   0.28081E-05  idn=   0.47746E-06
+  kp=    -0.914  e=  -0.40000E+01  i=   0.25508E-05  p=   0.68447E+00  iun=   0.21484E-05  idn=   0.40242E-06
+  kp=    -0.903  e=  -0.40000E+01  i=   0.20615E-05  p=   0.66217E+00  iun=   0.17133E-05  idn=   0.34822E-06
+  kp=    -0.892  e=  -0.40000E+01  i=   0.17184E-05  p=   0.64240E+00  iun=   0.14112E-05  idn=   0.30726E-06
+  kp=    -0.881  e=  -0.40000E+01  i=   0.14680E-05  p=   0.62488E+00  iun=   0.11926E-05  idn=   0.27534E-06
+  kp=    -0.870  e=  -0.40000E+01  i=   0.12796E-05  p=   0.60923E+00  iun=   0.10296E-05  idn=   0.25002E-06
+  kp=    -0.859  e=  -0.40000E+01  i=   0.11348E-05  p=   0.59499E+00  iun=   0.90499E-06  idn=   0.22980E-06
+  kp=    -0.848  e=  -0.40000E+01  i=   0.10217E-05  p=   0.58172E+00  iun=   0.80805E-06  idn=   0.21369E-06
+  kp=    -0.837  e=  -0.40000E+01  i=   0.93267E-06  p=   0.56900E+00  iun=   0.73168E-06  idn=   0.20099E-06
+  kp=    -0.825  e=  -0.40000E+01  i=   0.86227E-06  p=   0.55649E+00  iun=   0.67106E-06  idn=   0.19121E-06
+  kp=    -0.814  e=  -0.40000E+01  i=   0.80675E-06  p=   0.54394E+00  iun=   0.62279E-06  idn=   0.18396E-06
+  kp=    -0.803  e=  -0.40000E+01  i=   0.76335E-06  p=   0.53119E+00  iun=   0.58442E-06  idn=   0.17893E-06
+  kp=    -0.792  e=  -0.40000E+01  i=   0.73006E-06  p=   0.51816E+00  iun=   0.55417E-06  idn=   0.17589E-06
+  kp=    -0.781  e=  -0.40000E+01  i=   0.70535E-06  p=   0.50488E+00  iun=   0.53074E-06  idn=   0.17462E-06
+  kp=    -0.770  e=  -0.40000E+01  i=   0.68814E-06  p=   0.49143E+00  iun=   0.51315E-06  idn=   0.17498E-06
+  kp=    -0.758  e=  -0.40000E+01  i=   0.67761E-06  p=   0.47798E+00  iun=   0.50075E-06  idn=   0.17686E-06
+  kp=    -0.747  e=  -0.40000E+01  i=   0.67324E-06  p=   0.46473E+00  iun=   0.49306E-06  idn=   0.18018E-06
+  kp=    -0.736  e=  -0.40000E+01  i=   0.67473E-06  p=   0.45192E+00  iun=   0.48983E-06  idn=   0.18490E-06
+  kp=    -0.725  e=  -0.40000E+01  i=   0.68197E-06  p=   0.43982E+00  iun=   0.49096E-06  idn=   0.19101E-06
+  kp=    -0.714  e=  -0.40000E+01  i=   0.69510E-06  p=   0.42867E+00  iun=   0.49654E-06  idn=   0.19856E-06
+  kp=    -0.702  e=  -0.40000E+01  i=   0.71445E-06  p=   0.41875E+00  iun=   0.50682E-06  idn=   0.20764E-06
+  kp=    -0.691  e=  -0.40000E+01  i=   0.74065E-06  p=   0.41029E+00  iun=   0.52227E-06  idn=   0.21838E-06
+  kp=    -0.680  e=  -0.40000E+01  i=   0.77464E-06  p=   0.40353E+00  iun=   0.54362E-06  idn=   0.23103E-06
+  kp=    -0.669  e=  -0.40000E+01  i=   0.81780E-06  p=   0.39867E+00  iun=   0.57192E-06  idn=   0.24588E-06
+  kp=    -0.657  e=  -0.40000E+01  i=   0.87206E-06  p=   0.39591E+00  iun=   0.60866E-06  idn=   0.26340E-06
+  kp=    -0.646  e=  -0.40000E+01  i=   0.94017E-06  p=   0.39544E+00  iun=   0.65597E-06  idn=   0.28420E-06
+  kp=    -0.635  e=  -0.40000E+01  i=   0.10260E-05  p=   0.39741E+00  iun=   0.71687E-06  idn=   0.30913E-06
+  kp=    -0.623  e=  -0.40000E+01  i=   0.11351E-05  p=   0.40201E+00  iun=   0.79571E-06  idn=   0.33939E-06
+  kp=    -0.612  e=  -0.40000E+01  i=   0.12756E-05  p=   0.40936E+00  iun=   0.89886E-06  idn=   0.37670E-06
+  kp=    -0.601  e=  -0.40000E+01  i=   0.14595E-05  p=   0.41959E+00  iun=   0.10360E-05  idn=   0.42356E-06
+  kp=    -0.589  e=  -0.40000E+01  i=   0.17055E-05  p=   0.43279E+00  iun=   0.12218E-05  idn=   0.48370E-06
+  kp=    -0.578  e=  -0.40000E+01  i=   0.20432E-05  p=   0.44898E+00  iun=   0.14803E-05  idn=   0.56291E-06
+  kp=    -0.567  e=  -0.40000E+01  i=   0.25214E-05  p=   0.46814E+00  iun=   0.18509E-05  idn=   0.67051E-06
+  kp=    -0.555  e=  -0.40000E+01  i=   0.32248E-05  p=   0.49013E+00  iun=   0.24027E-05  idn=   0.82212E-06
+  kp=    -0.544  e=  -0.40000E+01  i=   0.43079E-05  p=   0.51473E+00  iun=   0.32627E-05  idn=   0.10453E-05
+  kp=    -0.533  e=  -0.40000E+01  i=   0.60681E-05  p=   0.54161E+00  iun=   0.46774E-05  idn=   0.13908E-05
+  kp=    -0.521  e=  -0.40000E+01  i=   0.91044E-05  p=   0.57031E+00  iun=   0.71484E-05  idn=   0.19560E-05
+  kp=    -0.510  e=  -0.40000E+01  i=   0.14606E-04  p=   0.60030E+00  iun=   0.11687E-04  idn=   0.29191E-05
+  kp=    -0.499  e=  -0.40000E+01  i=   0.24287E-04  p=   0.63092E+00  iun=   0.19805E-04  idn=   0.44820E-05
+  kp=    -0.487  e=  -0.40000E+01  i=   0.36186E-04  p=   0.66148E+00  iun=   0.30061E-04  idn=   0.61248E-05
+  kp=    -0.476  e=  -0.40000E+01  i=   0.37490E-04  p=   0.69130E+00  iun=   0.31704E-04  idn=   0.57867E-05
+  kp=    -0.465  e=  -0.40000E+01  i=   0.27492E-04  p=   0.71973E+00  iun=   0.23639E-04  idn=   0.38526E-05
+  kp=    -0.453  e=  -0.40000E+01  i=   0.18416E-04  p=   0.74623E+00  iun=   0.16080E-04  idn=   0.23367E-05
+  kp=    -0.442  e=  -0.40000E+01  i=   0.12856E-04  p=   0.77042E+00  iun=   0.11381E-04  idn=   0.14758E-05
+  kp=    -0.430  e=  -0.40000E+01  i=   0.95933E-05  p=   0.79204E+00  iun=   0.85958E-05  idn=   0.99751E-06
+  kp=    -0.419  e=  -0.40000E+01  i=   0.76078E-05  p=   0.81100E+00  iun=   0.68889E-05  idn=   0.71896E-06
+  kp=    -0.407  e=  -0.40000E+01  i=   0.63414E-05  p=   0.82729E+00  iun=   0.57938E-05  idn=   0.54760E-06
+  kp=    -0.396  e=  -0.40000E+01  i=   0.54980E-05  p=   0.84102E+00  iun=   0.50610E-05  idn=   0.43702E-06
+  kp=    -0.385  e=  -0.40000E+01  i=   0.49146E-05  p=   0.85230E+00  iun=   0.45517E-05  idn=   0.36294E-06
+  kp=    -0.373  e=  -0.40000E+01  i=   0.44966E-05  p=   0.86124E+00  iun=   0.41846E-05  idn=   0.31197E-06
+  kp=    -0.362  e=  -0.40000E+01  i=   0.41861E-05  p=   0.86792E+00  iun=   0.39097E-05  idn=   0.27644E-06
+  kp=    -0.350  e=  -0.40000E+01  i=   0.39460E-05  p=   0.87237E+00  iun=   0.36942E-05  idn=   0.25181E-06
+  kp=    -0.339  e=  -0.40000E+01  i=   0.37517E-05  p=   0.87454E+00  iun=   0.35164E-05  idn=   0.23535E-06
+  kp=    -0.327  e=  -0.40000E+01  i=   0.35867E-05  p=   0.87425E+00  iun=   0.33612E-05  idn=   0.22551E-06
+  kp=    -0.316  e=  -0.40000E+01  i=   0.34403E-05  p=   0.87124E+00  iun=   0.32188E-05  idn=   0.22148E-06
+  kp=    -0.305  e=  -0.40000E+01  i=   0.33061E-05  p=   0.86507E+00  iun=   0.30830E-05  idn=   0.22305E-06
+  kp=    -0.293  e=  -0.40000E+01  i=   0.31814E-05  p=   0.85512E+00  iun=   0.29509E-05  idn=   0.23046E-06
+  kp=    -0.282  e=  -0.40000E+01  i=   0.30667E-05  p=   0.84065E+00  iun=   0.28224E-05  idn=   0.24434E-06
+  kp=    -0.270  e=  -0.40000E+01  i=   0.29652E-05  p=   0.82083E+00  iun=   0.26996E-05  idn=   0.26565E-06
+  kp=    -0.259  e=  -0.40000E+01  i=   0.28824E-05  p=   0.79487E+00  iun=   0.25867E-05  idn=   0.29563E-06
+  kp=    -0.247  e=  -0.40000E+01  i=   0.28256E-05  p=   0.76233E+00  iun=   0.24898E-05  idn=   0.33577E-06
+  kp=    -0.236  e=  -0.40000E+01  i=   0.28040E-05  p=   0.72341E+00  iun=   0.24162E-05  idn=   0.38778E-06
+  kp=    -0.224  e=  -0.40000E+01  i=   0.28285E-05  p=   0.67924E+00  iun=   0.23748E-05  idn=   0.45363E-06
+  kp=    -0.213  e=  -0.40000E+01  i=   0.29121E-05  p=   0.63205E+00  iun=   0.23764E-05  idn=   0.53576E-06
+  kp=    -0.201  e=  -0.40000E+01  i=   0.30719E-05  p=   0.58501E+00  iun=   0.24345E-05  idn=   0.63740E-06
+  kp=    -0.190  e=  -0.40000E+01  i=   0.33312E-05  p=   0.54178E+00  iun=   0.25680E-05  idn=   0.76321E-06
+  kp=    -0.178  e=  -0.40000E+01  i=   0.37253E-05  p=   0.50586E+00  iun=   0.28049E-05  idn=   0.92041E-06
+  kp=    -0.167  e=  -0.40000E+01  i=   0.43099E-05  p=   0.47998E+00  iun=   0.31893E-05  idn=   0.11206E-05
+  kp=    -0.155  e=  -0.40000E+01  i=   0.51748E-05  p=   0.46569E+00  iun=   0.37923E-05  idn=   0.13825E-05
+  kp=    -0.144  e=  -0.40000E+01  i=   0.64583E-05  p=   0.46286E+00  iun=   0.47238E-05  idn=   0.17345E-05
+  kp=    -0.132  e=  -0.40000E+01  i=   0.83340E-05  p=   0.46924E+00  iun=   0.61223E-05  idn=   0.22117E-05
+  kp=    -0.121  e=  -0.40000E+01  i=   0.10861E-04  p=   0.47983E+00  iun=   0.80361E-05  idn=   0.28247E-05
+  kp=    -0.109  e=  -0.40000E+01  i=   0.13527E-04  p=   0.48701E+00  iun=   0.10058E-04  idn=   0.34697E-05
+  kp=    -0.098  e=  -0.40000E+01  i=   0.15033E-04  p=   0.48223E+00  iun=   0.11141E-04  idn=   0.38917E-05
+  kp=    -0.086  e=  -0.40000E+01  i=   0.14695E-04  p=   0.45964E+00  iun=   0.10725E-04  idn=   0.39702E-05
+  kp=    -0.075  e=  -0.40000E+01  i=   0.13399E-04  p=   0.41890E+00  iun=   0.95057E-05  idn=   0.38930E-05
+  kp=    -0.063  e=  -0.40000E+01  i=   0.12133E-04  p=   0.36438E+00  iun=   0.82772E-05  idn=   0.38561E-05
+  kp=    -0.052  e=  -0.40000E+01  i=   0.11222E-04  p=   0.30180E+00  iun=   0.73042E-05  idn=   0.39175E-05
+  kp=    -0.040  e=  -0.40000E+01  i=   0.10638E-04  p=   0.23557E+00  iun=   0.65718E-05  idn=   0.40659E-05
+  kp=    -0.029  e=  -0.40000E+01  i=   0.10286E-04  p=   0.16819E+00  iun=   0.60081E-05  idn=   0.42781E-05
+  kp=    -0.017  e=  -0.40000E+01  i=   0.10090E-04  p=   0.10076E+00  iun=   0.55534E-05  idn=   0.45367E-05
+  kp=    -0.006  e=  -0.40000E+01  i=   0.10003E-04  p=   0.33547E-01  iun=   0.51692E-05  idn=   0.48336E-05
+  kp=     0.006  e=  -0.40000E+01  i=   0.10003E-04  p=  -0.33554E-01  iun=   0.48336E-05  idn=   0.51692E-05
+  kp=     0.017  e=  -0.40000E+01  i=   0.10090E-04  p=  -0.10077E+00  iun=   0.45367E-05  idn=   0.55534E-05
+  kp=     0.029  e=  -0.40000E+01  i=   0.10286E-04  p=  -0.16820E+00  iun=   0.42780E-05  idn=   0.60081E-05
+  kp=     0.040  e=  -0.40000E+01  i=   0.10638E-04  p=  -0.23557E+00  iun=   0.40659E-05  idn=   0.65718E-05
+  kp=     0.052  e=  -0.40000E+01  i=   0.11222E-04  p=  -0.30180E+00  iun=   0.39175E-05  idn=   0.73042E-05
+  kp=     0.063  e=  -0.40000E+01  i=   0.12133E-04  p=  -0.36438E+00  iun=   0.38560E-05  idn=   0.82772E-05
+  kp=     0.075  e=  -0.40000E+01  i=   0.13399E-04  p=  -0.41890E+00  iun=   0.38930E-05  idn=   0.95057E-05
+  kp=     0.086  e=  -0.40000E+01  i=   0.14695E-04  p=  -0.45964E+00  iun=   0.39702E-05  idn=   0.10725E-04
+  kp=     0.098  e=  -0.40000E+01  i=   0.15033E-04  p=  -0.48223E+00  iun=   0.38917E-05  idn=   0.11141E-04
+  kp=     0.109  e=  -0.40000E+01  i=   0.13527E-04  p=  -0.48700E+00  iun=   0.34697E-05  idn=   0.10057E-04
+  kp=     0.121  e=  -0.40000E+01  i=   0.10861E-04  p=  -0.47983E+00  iun=   0.28247E-05  idn=   0.80361E-05
+  kp=     0.132  e=  -0.40000E+01  i=   0.83340E-05  p=  -0.46924E+00  iun=   0.22117E-05  idn=   0.61223E-05
+  kp=     0.144  e=  -0.40000E+01  i=   0.64582E-05  p=  -0.46286E+00  iun=   0.17345E-05  idn=   0.47237E-05
+  kp=     0.155  e=  -0.40000E+01  i=   0.51748E-05  p=  -0.46568E+00  iun=   0.13825E-05  idn=   0.37923E-05
+  kp=     0.167  e=  -0.40000E+01  i=   0.43099E-05  p=  -0.47998E+00  iun=   0.11206E-05  idn=   0.31893E-05
+  kp=     0.178  e=  -0.40000E+01  i=   0.37253E-05  p=  -0.50585E+00  iun=   0.92042E-06  idn=   0.28049E-05
+  kp=     0.190  e=  -0.40000E+01  i=   0.33312E-05  p=  -0.54177E+00  iun=   0.76322E-06  idn=   0.25680E-05
+  kp=     0.201  e=  -0.40000E+01  i=   0.30719E-05  p=  -0.58500E+00  iun=   0.63741E-06  idn=   0.24345E-05
+  kp=     0.213  e=  -0.40000E+01  i=   0.29122E-05  p=  -0.63204E+00  iun=   0.53578E-06  idn=   0.23764E-05
+  kp=     0.224  e=  -0.40000E+01  i=   0.28285E-05  p=  -0.67923E+00  iun=   0.45364E-06  idn=   0.23748E-05
+  kp=     0.236  e=  -0.40000E+01  i=   0.28040E-05  p=  -0.72341E+00  iun=   0.38779E-06  idn=   0.24162E-05
+  kp=     0.247  e=  -0.40000E+01  i=   0.28256E-05  p=  -0.76233E+00  iun=   0.33578E-06  idn=   0.24898E-05
+  kp=     0.259  e=  -0.40000E+01  i=   0.28824E-05  p=  -0.79486E+00  iun=   0.29564E-06  idn=   0.25868E-05
+  kp=     0.270  e=  -0.40000E+01  i=   0.29653E-05  p=  -0.82082E+00  iun=   0.26566E-06  idn=   0.26996E-05
+  kp=     0.282  e=  -0.40000E+01  i=   0.30668E-05  p=  -0.84065E+00  iun=   0.24434E-06  idn=   0.28224E-05
+  kp=     0.293  e=  -0.40000E+01  i=   0.31814E-05  p=  -0.85512E+00  iun=   0.23046E-06  idn=   0.29510E-05
+  kp=     0.305  e=  -0.40000E+01  i=   0.33061E-05  p=  -0.86507E+00  iun=   0.22305E-06  idn=   0.30831E-05
+  kp=     0.316  e=  -0.40000E+01  i=   0.34403E-05  p=  -0.87124E+00  iun=   0.22148E-06  idn=   0.32188E-05
+  kp=     0.327  e=  -0.40000E+01  i=   0.35868E-05  p=  -0.87425E+00  iun=   0.22551E-06  idn=   0.33613E-05
+  kp=     0.339  e=  -0.40000E+01  i=   0.37518E-05  p=  -0.87454E+00  iun=   0.23536E-06  idn=   0.35164E-05
+  kp=     0.350  e=  -0.40000E+01  i=   0.39461E-05  p=  -0.87237E+00  iun=   0.25181E-06  idn=   0.36943E-05
+  kp=     0.362  e=  -0.40000E+01  i=   0.41862E-05  p=  -0.86792E+00  iun=   0.27645E-06  idn=   0.39098E-05
+  kp=     0.373  e=  -0.40000E+01  i=   0.44967E-05  p=  -0.86124E+00  iun=   0.31198E-06  idn=   0.41847E-05
+  kp=     0.385  e=  -0.40000E+01  i=   0.49147E-05  p=  -0.85230E+00  iun=   0.36294E-06  idn=   0.45517E-05
+  kp=     0.396  e=  -0.40000E+01  i=   0.54981E-05  p=  -0.84102E+00  iun=   0.43703E-06  idn=   0.50611E-05
+  kp=     0.407  e=  -0.40000E+01  i=   0.63415E-05  p=  -0.82729E+00  iun=   0.54761E-06  idn=   0.57939E-05
+  kp=     0.419  e=  -0.40000E+01  i=   0.76080E-05  p=  -0.81100E+00  iun=   0.71897E-06  idn=   0.68890E-05
+  kp=     0.430  e=  -0.40000E+01  i=   0.95935E-05  p=  -0.79204E+00  iun=   0.99753E-06  idn=   0.85959E-05
+  kp=     0.442  e=  -0.40000E+01  i=   0.12857E-04  p=  -0.77042E+00  iun=   0.14758E-05  idn=   0.11381E-04
+  kp=     0.453  e=  -0.40000E+01  i=   0.18417E-04  p=  -0.74623E+00  iun=   0.23368E-05  idn=   0.16080E-04
+  kp=     0.465  e=  -0.40000E+01  i=   0.27492E-04  p=  -0.71973E+00  iun=   0.38527E-05  idn=   0.23640E-04
+  kp=     0.476  e=  -0.40000E+01  i=   0.37491E-04  p=  -0.69130E+00  iun=   0.57867E-05  idn=   0.31704E-04
+  kp=     0.487  e=  -0.40000E+01  i=   0.36186E-04  p=  -0.66148E+00  iun=   0.61249E-05  idn=   0.30061E-04
+  kp=     0.499  e=  -0.40000E+01  i=   0.24287E-04  p=  -0.63092E+00  iun=   0.44820E-05  idn=   0.19805E-04
+  kp=     0.510  e=  -0.40000E+01  i=   0.14606E-04  p=  -0.60030E+00  iun=   0.29191E-05  idn=   0.11687E-04
+  kp=     0.521  e=  -0.40000E+01  i=   0.91044E-05  p=  -0.57031E+00  iun=   0.19560E-05  idn=   0.71484E-05
+  kp=     0.533  e=  -0.40000E+01  i=   0.60681E-05  p=  -0.54161E+00  iun=   0.13908E-05  idn=   0.46773E-05
+  kp=     0.544  e=  -0.40000E+01  i=   0.43079E-05  p=  -0.51473E+00  iun=   0.10453E-05  idn=   0.32627E-05
+  kp=     0.555  e=  -0.40000E+01  i=   0.32248E-05  p=  -0.49013E+00  iun=   0.82212E-06  idn=   0.24027E-05
+  kp=     0.567  e=  -0.40000E+01  i=   0.25214E-05  p=  -0.46814E+00  iun=   0.67052E-06  idn=   0.18509E-05
+  kp=     0.578  e=  -0.40000E+01  i=   0.20432E-05  p=  -0.44898E+00  iun=   0.56292E-06  idn=   0.14803E-05
+  kp=     0.589  e=  -0.40000E+01  i=   0.17055E-05  p=  -0.43278E+00  iun=   0.48370E-06  idn=   0.12218E-05
+  kp=     0.601  e=  -0.40000E+01  i=   0.14595E-05  p=  -0.41959E+00  iun=   0.42356E-06  idn=   0.10360E-05
+  kp=     0.612  e=  -0.40000E+01  i=   0.12756E-05  p=  -0.40935E+00  iun=   0.37671E-06  idn=   0.89887E-06
+  kp=     0.623  e=  -0.40000E+01  i=   0.11351E-05  p=  -0.40200E+00  iun=   0.33939E-06  idn=   0.79571E-06
+  kp=     0.635  e=  -0.40000E+01  i=   0.10260E-05  p=  -0.39741E+00  iun=   0.30913E-06  idn=   0.71687E-06
+  kp=     0.646  e=  -0.40000E+01  i=   0.94017E-06  p=  -0.39543E+00  iun=   0.28420E-06  idn=   0.65598E-06
+  kp=     0.657  e=  -0.40000E+01  i=   0.87207E-06  p=  -0.39591E+00  iun=   0.26340E-06  idn=   0.60866E-06
+  kp=     0.669  e=  -0.40000E+01  i=   0.81780E-06  p=  -0.39867E+00  iun=   0.24589E-06  idn=   0.57192E-06
+  kp=     0.680  e=  -0.40000E+01  i=   0.77465E-06  p=  -0.40353E+00  iun=   0.23103E-06  idn=   0.54362E-06
+  kp=     0.691  e=  -0.40000E+01  i=   0.74066E-06  p=  -0.41029E+00  iun=   0.21839E-06  idn=   0.52227E-06
+  kp=     0.702  e=  -0.40000E+01  i=   0.71446E-06  p=  -0.41875E+00  iun=   0.20764E-06  idn=   0.50682E-06
+  kp=     0.714  e=  -0.40000E+01  i=   0.69510E-06  p=  -0.42867E+00  iun=   0.19857E-06  idn=   0.49654E-06
+  kp=     0.725  e=  -0.40000E+01  i=   0.68198E-06  p=  -0.43982E+00  iun=   0.19102E-06  idn=   0.49096E-06
+  kp=     0.736  e=  -0.40000E+01  i=   0.67473E-06  p=  -0.45192E+00  iun=   0.18490E-06  idn=   0.48983E-06
+  kp=     0.747  e=  -0.40000E+01  i=   0.67324E-06  p=  -0.46473E+00  iun=   0.18018E-06  idn=   0.49306E-06
+  kp=     0.758  e=  -0.40000E+01  i=   0.67761E-06  p=  -0.47798E+00  iun=   0.17686E-06  idn=   0.50075E-06
+  kp=     0.770  e=  -0.40000E+01  i=   0.68814E-06  p=  -0.49143E+00  iun=   0.17498E-06  idn=   0.51315E-06
+  kp=     0.781  e=  -0.40000E+01  i=   0.70536E-06  p=  -0.50487E+00  iun=   0.17462E-06  idn=   0.53074E-06
+  kp=     0.792  e=  -0.40000E+01  i=   0.73006E-06  p=  -0.51816E+00  iun=   0.17589E-06  idn=   0.55417E-06
+  kp=     0.803  e=  -0.40000E+01  i=   0.76336E-06  p=  -0.53119E+00  iun=   0.17894E-06  idn=   0.58442E-06
+  kp=     0.814  e=  -0.40000E+01  i=   0.80675E-06  p=  -0.54394E+00  iun=   0.18396E-06  idn=   0.62279E-06
+  kp=     0.825  e=  -0.40000E+01  i=   0.86227E-06  p=  -0.55649E+00  iun=   0.19121E-06  idn=   0.67106E-06
+  kp=     0.837  e=  -0.40000E+01  i=   0.93267E-06  p=  -0.56900E+00  iun=   0.20099E-06  idn=   0.73168E-06
+  kp=     0.848  e=  -0.40000E+01  i=   0.10217E-05  p=  -0.58172E+00  iun=   0.21369E-06  idn=   0.80805E-06
+  kp=     0.859  e=  -0.40000E+01  i=   0.11348E-05  p=  -0.59499E+00  iun=   0.22980E-06  idn=   0.90499E-06
+  kp=     0.870  e=  -0.40000E+01  i=   0.12796E-05  p=  -0.60923E+00  iun=   0.25002E-06  idn=   0.10296E-05
+  kp=     0.881  e=  -0.40000E+01  i=   0.14680E-05  p=  -0.62488E+00  iun=   0.27534E-06  idn=   0.11926E-05
+  kp=     0.892  e=  -0.40000E+01  i=   0.17184E-05  p=  -0.64240E+00  iun=   0.30726E-06  idn=   0.14112E-05
+  kp=     0.903  e=  -0.40000E+01  i=   0.20615E-05  p=  -0.66217E+00  iun=   0.34822E-06  idn=   0.17133E-05
+  kp=     0.914  e=  -0.40000E+01  i=   0.25508E-05  p=  -0.68447E+00  iun=   0.40242E-06  idn=   0.21484E-05
+  kp=     0.925  e=  -0.40000E+01  i=   0.32855E-05  p=  -0.70936E+00  iun=   0.47745E-06  idn=   0.28080E-05
+  kp=     0.936  e=  -0.40000E+01  i=   0.44659E-05  p=  -0.73654E+00  iun=   0.58829E-06  idn=   0.38776E-05
+  kp=     0.947  e=  -0.40000E+01  i=   0.65351E-05  p=  -0.76528E+00  iun=   0.76697E-06  idn=   0.57682E-05
+  kp=     0.958  e=  -0.40000E+01  i=   0.10570E-04  p=  -0.79417E+00  iun=   0.10878E-05  idn=   0.94818E-05
+  kp=     0.969  e=  -0.40000E+01  i=   0.19140E-04  p=  -0.82101E+00  iun=   0.17129E-05  idn=   0.17427E-04
+  kp=     0.980  e=  -0.40000E+01  i=   0.33466E-04  p=  -0.84274E+00  iun=   0.26314E-05  idn=   0.30835E-04
+  kp=     0.991  e=  -0.40000E+01  i=   0.31917E-04  p=  -0.85553E+00  iun=   0.23055E-05  idn=   0.29611E-04
+  kp=     1.002  e=  -0.40000E+01  i=   0.16848E-04  p=  -0.85525E+00  iun=   0.12193E-05  idn=   0.15628E-04
+  kp=     1.013  e=  -0.40000E+01  i=   0.87360E-05  p=  -0.83835E+00  iun=   0.70607E-06  idn=   0.80299E-05
+  kp=     1.024  e=  -0.40000E+01  i=   0.51100E-05  p=  -0.80206E+00  iun=   0.50573E-06  idn=   0.46043E-05
+  kp=     1.035  e=  -0.40000E+01  i=   0.34055E-05  p=  -0.74817E+00  iun=   0.42881E-06  idn=   0.29767E-05
+  kp=     1.046  e=  -0.40000E+01  i=   0.24844E-05  p=  -0.67881E+00  iun=   0.39898E-06  idn=   0.20854E-05
+  kp=     1.057  e=  -0.40000E+01  i=   0.19508E-05  p=  -0.59926E+00  iun=   0.39088E-06  idn=   0.15599E-05
+  kp=     1.068  e=  -0.40000E+01  i=   0.16238E-05  p=  -0.51548E+00  iun=   0.39337E-06  idn=   0.12304E-05
+  kp=     1.079  e=  -0.40000E+01  i=   0.14155E-05  p=  -0.43306E+00  iun=   0.40124E-06  idn=   0.10142E-05
+  kp=     1.089  e=  -0.40000E+01  i=   0.12796E-05  p=  -0.35632E+00  iun=   0.41184E-06  idn=   0.86780E-06
+  kp=     1.100  e=  -0.40000E+01  i=   0.11904E-05  p=  -0.28811E+00  iun=   0.42373E-06  idn=   0.76670E-06
+  kp=     1.111  e=  -0.40000E+01  i=   0.11326E-05  p=  -0.22998E+00  iun=   0.43607E-06  idn=   0.69656E-06
+  kp=     1.122  e=  -0.40000E+01  i=   0.10969E-05  p=  -0.18256E+00  iun=   0.44834E-06  idn=   0.64860E-06
+
+ *******************************************************************************
+ *******************************************************************************
+
+          MPI process number  0  out of 100 processes
+          calculation for task = ARPES     
+          finished in subroutine <SPECMAIN>
+          SCPEC calculation finished
+          run time info  CPU       1768.946 sec
+                         WALL      2212.368 sec
+
+ *******************************************************************************
+ *******************************************************************************
+
+          program stopped regularly via STOP_REGULAR
+
