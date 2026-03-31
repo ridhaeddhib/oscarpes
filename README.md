@@ -63,9 +63,9 @@ from oscarpes.ingest import ingest_directory
 eid = ingest_directory(
     '/path/to/calc_dir',   # folder with *.inp, *_data.spc, *.pot, etc.
     'oscar_db/',           # database root (created automatically)
-    formula='2H-WSe2',
+    formula='Se2W',
 )
-print(eid)  # 'osc-2H-WSe2-1'
+print(eid)  # 'osc-Se2W-1'
 ```
 
 ### Batch ingest an entire folder tree
@@ -86,10 +86,10 @@ db = OSCARDatabase('oscar_db/')
 print(db)  # tabular summary of all entries
 
 # Filter by metadata
-entries = db.find(formula='WSe2', photon_energy_ev=50., polarization='C+')
+entries = db.find(formula='Se2W', photon_energy_ev=50., polarization='C+')
 
 # Access a single entry by ID
-e = db['osc-2H-WSe2-1']
+e = db['osc-Se2W-1']
 print(e)
 ```
 
@@ -157,7 +157,7 @@ from oscarpes.ml_features import extract_features, batch_extract
 fv = extract_features(e)
 
 # Batch: (N, 128) array for all entries
-entries = db.find(formula='WSe2')
+entries = db.find(formula='Se2W')
 X = batch_extract(entries)
 
 # PyTorch streaming directly from Lance
@@ -170,7 +170,7 @@ loader = torch.utils.data.DataLoader(ds, batch_size=32)
 ```python
 from oscarpes.nomad_export import export_entry, export_database
 
-export_entry(e, 'wse2_arpes.zip')
+export_entry(e, 'Se2W_arpes.zip')
 export_database(db, 'oscar_upload.zip')
 ```
 
